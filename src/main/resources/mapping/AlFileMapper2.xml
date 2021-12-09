@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.videodownload.mapper.AlFileMapper">
+
+    <resultMap type="AlFile" id="AlFileResult">
+        <result property="id"    column="id"    />
+        <result property="fileUrl"    column="file_url"    />
+        <result property="qrCodeUrl"    column="qr_code_url"    />
+    </resultMap>
+
+    <sql id="selectAlFileVo">
+        select id, file_url, qr_code_url from al_file2
+    </sql>
+
+    <select id="selectAlFileList" parameterType="AlFile" resultMap="AlFileResult">
+        <include refid="selectAlFileVo"/>
+        <where>  
+            <if test="fileUrl != null  and fileUrl != ''"> and file_url = #{fileUrl}</if>
+            <if test="qrCodeUrl != null  and qrCodeUrl != ''"> and qr_code_url = #{qrCodeUrl}</if>
+        </where>
+    </select>
+    
+    <select id="selectAlFileById" parameterType="String" resultMap="AlFileResult">
+        <include refid="selectAlFileVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertAlFile" parameterType="AlFile">
+        insert into al_file2
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null and id != ''">id,</if>
+            <if test="fileUrl != null and fileUrl != ''">file_url,</if>
+            <if test="qrCodeUrl != null and qrCodeUrl != ''">qr_code_url,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null and id != ''">#{id},</if>
+            <if test="fileUrl != null and fileUrl != ''">#{fileUrl},</if>
+            <if test="qrCodeUrl != null and qrCodeUrl != ''">#{qrCodeUrl},</if>
+         </trim>
+    </insert>
+
+    <update id="updateAlFile" parameterType="AlFile">
+        update al_file2
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="fileUrl != null and fileUrl != ''">file_url = #{fileUrl},</if>
+            <if test="qrCodeUrl != null and qrCodeUrl != ''">qr_code_url = #{qrCodeUrl},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteAlFileById" parameterType="String">
+        delete from al_file2 where id = #{id}
+    </delete>
+
+    <delete id="deleteAlFileByIds" parameterType="String">
+        delete from al_file2 where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+</mapper>

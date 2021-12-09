@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <title>掌阅--媒体播放器</title>
+        <link rel="stylesheet" th:href="@{/zy/zy.media.min.css}"/>
+    </head>
+    <body>
+        <div class="zy_media" >
+
+            <video width="320" height="240" controls autoplay muted >
+            <source th:src="${fileUrl}" type="video/mp4">
+            <source th:src="movie.ogg" type="video/ogg">
+            您的浏览器不支持 HTML5 video 标签。
+           </video>
+        </div>
+        <a href="test.mp4" download="download">下载</a>
+        <button onclick="downloadFile()">btn下载测试</button>
+
+        <button onclick="downloadFile2()">btn下载测试外部内容</button>
+        <script th:src="@{/zy/zy.media.min.js}"></script>
+        <script th:src="@{/zy/download.js}"></script>
+        <script th:inline="javascript">
+            zymedia('video')
+
+            /*<![CDATA[*/
+            var fileUrl = [[${fileUrl}]];
+            var downloadUrl = [[${downloadUrl}]];
+            /*]]>*/
+
+            function downloadFile(){
+                if("Android" === judgeClient()){
+                    download(fileUrl);
+                }else {
+                    window.location.href = downloadUrl;
+                }
+            }
+
+            function downloadFile2(){
+                alert(2);
+                download('https://www.w3schools.com/html/mov_bbb.mp4');
+            }
+
+            /*判断客户端*/
+            function judgeClient() {
+                let u = navigator.userAgent;
+                let isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;   //判断是否是 android终端
+                let isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);     //判断是否是 iOS终端
+                console.log('是否是Android：' + isAndroid); //true,false
+                console.log('是否是iOS：' + isIOS);
+                if(isAndroid){
+                    return 'Android';
+                }else if(isIOS){
+                    return 'IOS';
+                }else{
+                    return 'PC';
+                }
+            }
+        </script>
+    </body>
+</html>
