@@ -108,10 +108,9 @@ public class AlFileController {
     }
 @PostMapping("/uploadfile")
 @ResponseBody
-public AjaxResult uploadfile(MultipartFile file,String filename){
+public AjaxResult uploadfile(MultipartFile file,String filename,String type){
         if(file.isEmpty()){
             return AjaxResult.error("上传文件失败，请选择文件");
-
         }
         File folder=new File(fileDir+filename);
         if(!folder.exists()&&!folder.isDirectory()){
@@ -124,6 +123,7 @@ public AjaxResult uploadfile(MultipartFile file,String filename){
             String  fileUrl=serverUrl+"/myFile/"+filename+"/"+fileNa;
             AlFile alFile=new AlFile();
             alFile.setFileUrl(fileUrl);
+            alFile.setType(type);
             String  qrCodeFileUrl=iAlFileService.uploadAlFile(alFile,filename);
             return AjaxResult.success("success",qrCodeFileUrl);
         }catch (IOException e){

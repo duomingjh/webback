@@ -10,7 +10,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 @ServerEndpoint(value = "/websocket")
 @Component
 public class MyWebSocket {
- private static int onlineCount=0;
+private static int onlineCount=0;
 private  static CopyOnWriteArrayList<MyWebSocket> webSockets=new CopyOnWriteArrayList<>();
 private Session session;
 

@@ -4,6 +4,8 @@
     <title>测试</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
     <style>
         body {
             font-family: Monospace;
@@ -33,10 +35,10 @@
             background: url("/img/jt2.png") center repeat ;
             background-size: 100% 100%;
             position: absolute;
-            top: 40%;
+
             left:0px;
             border: none;
-            bottom: 40%;
+            bottom: 10%;
         }
         .box3 {
             width: 20%;
@@ -44,10 +46,59 @@
             background: url("/img/jt.png") center no-repeat ;
             background-size: 100% 100%;
             position: absolute;
-            top: 40%;
+
             right:0px;
             border: none;
-            bottom: 40%;
+            bottom: 10%;
+        }
+        .box2 {
+           margin-top: 10vw;
+            width: 100%;
+            height: 10%;
+
+        }
+        .box7 {
+            width: 20%;
+            height: 15%;
+
+            background-size: 100% 100%;
+            position: absolute;
+
+            left:20%;
+            border: none;
+            top: 5%;
+        }.box5 {
+             width: 20%;
+             height: 15%;
+             background: green ;
+             background-size: 100% 100%;
+             position: absolute;
+
+             left:40%;
+             border: none;
+             top: 5%;
+         }
+        .box6 {
+             width: 20%;
+             height: 15%;
+             background: green ;
+             background-size: 100% 100%;
+             position: absolute;
+
+             left:60%;
+             border: none;
+             top: 5%;
+         }
+        .box8 {
+            width: 40%;
+            height: 10%;
+
+            background-size: 100% 100%;
+            position: absolute;
+
+            left: 30%;
+            border: none;
+            bottom: 5%;
         }
 
     </style>
@@ -64,9 +115,14 @@
 <script th:src="@{/three.js-r102/examples/js/libs/stats.min.js}"></script>
 <script th:src="@{/three.js-r102/examples/js/loaders/GLTFLoader.js}"></script>
 
+<img class="box7" id="photos1" src="/img/jt.png" width="1920" height="1080"></img>
+<img class="box5"  id="photos2"></img>
+<img class="box6" id="photos3"></img>
 
-    <button class="box4" id="huan">1</button>
+    <button class="box4" id="huan" >1</button>
     <button class="box3" id="huan1">2</button>
+
+    <button class="box8 but2 btn btn-primary" id="fs">2</button>
 
 
 
@@ -76,14 +132,19 @@
     var camera, scene, renderer, light,model,loader;
 
     var clock = new THREE.Clock();
-     var modename=["yhy.glb","恐龙_03.glb"]
+     var modename=["yshi.FBX","weixing.FBX","火星车.fbx"];
+     var texurl=["webp.webp (1).jpg","weixin.jpg","huoxingche.jpg"];
     var mixer;
     var btn=document.getElementById("huan");
     var btn1=document.getElementById("huan1");
+    var p1=document.getElementById("photos1");
+    var p2=document.getElementById("photos2");
+    var p3=document.getElementById("photos3");
+    var but2=document.getElementById("fs");
     var x=1;
     var websocker=null;
     var count=0;
-    var maxcount=2;
+    var maxcount=3;
     var  mincount=0;
     var buttflag=1;
     if('WebSocket' in window){
@@ -99,26 +160,20 @@
     websocket.onmessage = function(event){
        alert(event.data);
     }*/
+    but2.onclick=function (){
+        websocker.send("ok,"+count);
 
+    }
     btn1.onclick=function () {
         websocker.send("你好");
         if(++count>=maxcount){
             count=0;
 
         }
-        buttflag=1;
+        buttflag=2;
         console.log(count);
-        loader.load( '/modes/absd/'+modename[count], function ( gltf ) {
-            scene.remove(model);
-            scene.add( gltf.scene );
-            model=gltf.scene;
-            model.position.set(-100,-100,0);
-
-        }, undefined, function ( error ) {
-
-            console.error( error );
-
-        } );
+        p1.src="/img/hxce.png";
+        ghmodel('/modes/absd/'+modename[count],texurl[count],buttflag);
 
     }
 
@@ -130,18 +185,8 @@
             count=maxcount-1;
 
         }
-        buttflag=2;
-        loader.load( '/modes/absd/'+modename[count], function ( gltf ) {
-            scene.remove(model);
-            scene.add( gltf.scene );
-             model=gltf.scene;
-             model.position.set(100,-100,0);
-
-        }, undefined, function ( error ) {
-
-            console.error( error );
-
-        } );
+        buttflag=1;
+       ghmodel('/modes/absd/'+modename[count],texurl[count],buttflag);
 
     }
     if ( WEBGL.isWebGLAvailable() === false ) {
@@ -153,7 +198,63 @@
 
     init();
     animate();
+    function  ghmodel(modelurl,ppath,dir){
+        loader = new THREE.FBXLoader();
+        loader.load(modelurl,function(fbxObject){
+            fbxObject.traverse(function(child){
+                if(child instanceof THREE.Mesh)
+                {
+                    if(child.name.indexOf("Body") != -1)
+                    {
+                        // 如果贴图格式为tga则使用THREE.TGALoader
+                        // var loader = new THREE.TGALoader();
+                        // 如果贴图格式为其他普通格式，则使用Three.TextureLoader
+                        var loadert = new Three.TextureLoader();
+                        loadert.load(
+                            ppath,   // 本地路径的图片
 
+                            // 加载完贴图后的回调函数
+                            function (texture) {
+                                child.material.map = texture;
+                                child.material.needsUpdate = true;
+                                console.log("身体贴图更新完毕");
+                            },
+
+                            // 目前不支持加载贴图过程中的回调函数
+                            undefined,
+
+                            // 加载出错时候的回调函数
+                            function (err) {
+                                console.error('An error happened.');
+                            }
+                        );
+
+                    }
+                }
+            });
+            scene.remove(model);
+            scene.add(fbxObject);
+            camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 10000);
+
+            camera.position.set( 0, 0, 300 );
+            controls = new THREE.OrbitControls( camera);
+
+            controls.update();
+            model=fbxObject;
+            if(dir==2){
+                model.position.set(-100,0,0);
+                model.scale.set(0.5,0.5,0.5);
+
+            }else if(dir==1){
+
+                model.position.set(100,0,0);
+               
+                model.scale.set(0.5,0.5,0.5);
+            }
+
+        });
+
+    }
     function init() {
 
         container = document.createElement( 'div' );
@@ -164,7 +265,6 @@
         camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
         camera.position.set( 0, 0, 300 );
 
-
         controls = new THREE.OrbitControls( camera);
 
         controls.update();
@@ -174,7 +274,7 @@
         scene.fog = new THREE.Fog( 0xa0a0a0, 200, 1000 );
 
         light = new THREE.HemisphereLight( 0xffffff, 0x444444 );
-        light.position.set( 0, 200, 0 );
+        light.position.set( 0, 200, 100 );
         scene.add( light );
 
         light = new THREE.DirectionalLight( 0xffffff );
@@ -184,7 +284,7 @@
         light.shadow.camera.bottom = - 100;
         light.shadow.camera.left = - 120;
         light.shadow.camera.right = 120;
-      //  scene.add( light );
+        scene.add( light );
 
         // scene.add( new THREE.CameraHelper( light.shadow.camera ) );
 
@@ -198,22 +298,47 @@
         grid.material.opacity = 0.2;
         grid.material.transparent = true;
       //  scene.add( grid );
-         loader = new THREE.GLTFLoader();
 
-        loader.load( '/modes/absd/yhy.glb', function ( gltf ) {
+        var fbxModelfilepath = '/modes/absd/yshi.FBX';
+        loader = new THREE.FBXLoader();
+        loader.load(fbxModelfilepath,function(fbxObject){
+            fbxObject.traverse(function(child){
+                if(child instanceof THREE.Mesh)
+                {
+                    if(child.name.indexOf("Body") != -1)
+                    {
+                        // 如果贴图格式为tga则使用THREE.TGALoader
+                        // var loader = new THREE.TGALoader();
+                        // 如果贴图格式为其他普通格式，则使用Three.TextureLoader
+                        var loadert = new Three.TextureLoader();
+                        loadert.load(
+                            'webp.webp (1).jpg',   // 本地路径的图片
 
-            scene.add( gltf.scene );
-            model=gltf.scene;
+                            // 加载完贴图后的回调函数
+                            function (texture) {
+                                child.material.map = texture;
+                                child.material.needsUpdate = true;
+                                console.log("身体贴图更新完毕");
+                            },
 
-            model.position.set(-100,-100,0);
-            model.material.transparent=true;
-            model.material.opacity=0.1;
+                            // 目前不支持加载贴图过程中的回调函数
+                            undefined,
 
-        }, undefined, function ( error ) {
+                            // 加载出错时候的回调函数
+                            function (err) {
+                                console.error('An error happened.');
+                            }
+                        );
 
-            console.error( error );
+                    }
+                }
+            });
 
-        } );
+            scene.add(fbxObject);
+            model=fbxObject;
+
+            model.scale.set(0.5,0.5,0.5);
+        });
         // model
 
         renderer = new THREE.WebGLRenderer( { antialias: true , alpha : true} );
@@ -249,18 +374,18 @@
         var delta = clock.getDelta();
       //  model.position.set(0,-100,0);
 
-            console.log(model.position.x);
 
-           if(model.position.x<0&&buttflag==1){
+
+           if(model.position.x<0&&buttflag==2){
 
                model.position.x+=x;
 
-                x+=0.4;
+                x+=0.2;
 
-           }else if(model.position.x>0&&buttflag==2){
+           }else if(model.position.x>0&&buttflag==1){
                model.position.x-=x;
 
-               x+=0.4;
+               x+=0.2;
            }
            else{
 

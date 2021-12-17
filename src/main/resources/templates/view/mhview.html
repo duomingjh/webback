@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:thSys="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title >妈妈，我上春晚了！</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/pot/js/viewer.min.css}">
+    <script th:src="@{/pot/js/viewer.min.js}"></script>
+    <style th:inline="text">
+        body {
+            margin: 0;
+            background-color: white;
+        }
+        .box {
+            width: 100%;
+            box-sizing: border-box;
+            overflow: scroll;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .show-img{
+            display: inline-block;
+            width: 200%;
+            margin-top: 30%;
+        }
+        .but1 {
+            width: 30%;
+            height: 6%;
+            background-size: 100% 100%;
+            position: absolute;
+
+            left:15%;
+            border: none;
+            bottom: 15%;
+           text-align: center;
+        }
+        .but2 {
+            width: 30%;
+            height: 6%;
+            background-size: 100% 100%;
+            position: absolute;
+
+            right:15%;
+            border: none;
+            bottom: 15%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div >
+        <img id="image" th:data-original="${fileUrl}" class="show-img" th:src="${fileUrl}" alt="">
+    </div>
+
+</div>
+<a class="but1 btn btn-primary" href="http://www.w3school.com.cn">重温春晚</a>
+<a class="but2 btn btn-primary" href="http://www.w3school.com.cn">下载新闻客户端</a>
+<script>
+    var image = new Viewer(document.getElementById('image'),{
+        url: 'data-original',
+        title:false,
+        maxZoomRatio:1,
+        toolbar:false
+    });
+</script>
+
+</body>

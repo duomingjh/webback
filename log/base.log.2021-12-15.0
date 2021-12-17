@@ -1,0 +1,506 @@
+2021-12-15 13:58:57,030 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 18048 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 13:58:57,033 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 13:58:57,033 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 13:58:58,475 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.946 seconds (JVM running for 2.731)
+2021-12-15 14:11:31,677 INFO (AlFileController.java:97)- 文件上传成功
+2021-12-15 14:11:32,227 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? 
+2021-12-15 14:11:32,245 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/upload2/63.00276.jpg(String)
+2021-12-15 14:11:32,261 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-15 14:11:32,269 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/949aa836724847c59b8bacf9c7272bd8
+2021-12-15 14:11:32,433 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/upload2/949aa836724847c59b8bacf9c7272bd8.jpg！
+2021-12-15 14:11:32,434 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url ) values ( ?, ?, ? ) 
+2021-12-15 14:11:32,435 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 949aa836724847c59b8bacf9c7272bd8(String), http://192.168.1.20:1112/myFile/upload2/63.00276.jpg(String), http://192.168.1.20:1112/myFile/upload2/949aa836724847c59b8bacf9c7272bd8.jpg(String)
+2021-12-15 14:11:32,454 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-15 14:12:02,106 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:12:02,106 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 949aa836724847c59b8bacf9c7272bd8(String)
+2021-12-15 14:12:02,108 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:18:57,594 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-15 14:18:57,595 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/62.89401.jpg(String), mh(String)
+2021-12-15 14:18:57,596 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-15 14:18:57,596 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/fe5bcacb7dc04b97a74805acab9ee4fb
+2021-12-15 14:18:57,621 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/fe5bcacb7dc04b97a74805acab9ee4fb~.jpg！
+2021-12-15 14:18:57,622 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-15 14:18:57,622 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: fe5bcacb7dc04b97a74805acab9ee4fb~(String), http://192.168.1.20:1112/myFile/manhua/62.89401.jpg(String), http://192.168.1.20:1112/myFile/manhua/fe5bcacb7dc04b97a74805acab9ee4fb~.jpg(String), mh(String)
+2021-12-15 14:18:57,637 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-15 14:22:08,003 INFO (AlFileController.java:97)- 文件上传成功
+2021-12-15 14:22:08,004 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? 
+2021-12-15 14:22:08,004 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/upload2/65.77102.jpg(String)
+2021-12-15 14:22:08,006 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-15 14:22:08,007 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/367a394b47524ba1852aafbe009b33e3
+2021-12-15 14:22:08,030 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/upload2/367a394b47524ba1852aafbe009b33e3.jpg！
+2021-12-15 14:22:08,030 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url ) values ( ?, ?, ? ) 
+2021-12-15 14:22:08,031 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 367a394b47524ba1852aafbe009b33e3(String), http://192.168.1.20:1112/myFile/upload2/65.77102.jpg(String), http://192.168.1.20:1112/myFile/upload2/367a394b47524ba1852aafbe009b33e3.jpg(String)
+2021-12-15 14:22:08,046 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-15 14:22:19,029 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:22:19,030 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 367a394b47524ba1852aafbe009b33e3(String)
+2021-12-15 14:22:19,031 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:23:57,719 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-15 14:23:57,719 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/64.38496.jpg(String), mh(String)
+2021-12-15 14:23:57,720 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-15 14:23:57,720 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/96edd9cf47344b77bec163679db207f2
+2021-12-15 14:23:57,744 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/96edd9cf47344b77bec163679db207f2~.jpg！
+2021-12-15 14:23:57,745 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-15 14:23:57,745 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String), http://192.168.1.20:1112/myFile/manhua/64.38496.jpg(String), http://192.168.1.20:1112/myFile/manhua/96edd9cf47344b77bec163679db207f2~.jpg(String), mh(String)
+2021-12-15 14:23:57,759 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-15 14:24:05,974 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:24:05,974 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:24:05,975 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:24:08,097 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:24:08,097 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:24:08,098 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:25:34,519 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 324 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:25:34,522 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:25:34,522 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:25:35,757 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.5 seconds (JVM running for 2.012)
+2021-12-15 14:25:40,342 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:25:40,357 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:25:40,369 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:27:17,473 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 21944 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:27:17,474 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:27:17,475 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:27:18,717 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.473 seconds (JVM running for 1.965)
+2021-12-15 14:27:24,952 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:27:24,965 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:27:24,978 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:29:12,937 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 24296 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:29:12,939 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:29:12,940 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:29:14,072 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.365 seconds (JVM running for 1.833)
+2021-12-15 14:29:25,962 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:29:25,975 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:29:25,987 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:29:27,783 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:29:27,783 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:29:27,784 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:30:02,706 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:30:02,706 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:30:02,707 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:31:27,979 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 32260 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:31:27,980 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:31:27,981 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:31:28,966 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.178 seconds (JVM running for 1.577)
+2021-12-15 14:31:38,801 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:31:38,813 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:31:38,824 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:33:05,152 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:33:05,153 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:33:05,154 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:33:26,872 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:33:26,872 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:33:26,873 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:33:34,392 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:33:34,392 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:33:34,394 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:34:29,976 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 6676 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:34:29,978 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:34:29,978 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:34:30,975 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.196 seconds (JVM running for 1.606)
+2021-12-15 14:34:36,987 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:34:36,999 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:34:37,010 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:35:43,863 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 12412 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:35:43,865 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:35:43,865 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:35:44,823 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.155 seconds (JVM running for 1.565)
+2021-12-15 14:35:48,641 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:35:48,654 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:35:48,664 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:40:02,583 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 18192 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:40:02,585 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:40:02,585 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:40:03,580 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.19 seconds (JVM running for 1.586)
+2021-12-15 14:40:09,858 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:40:09,871 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:40:09,881 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:41:15,039 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 17368 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:41:15,041 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:41:15,042 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:41:16,011 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.206 seconds (JVM running for 1.715)
+2021-12-15 14:41:19,167 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:41:19,178 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:41:19,189 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:41:52,626 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 25400 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:41:52,628 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:41:52,628 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:41:53,620 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.191 seconds (JVM running for 1.604)
+2021-12-15 14:42:03,132 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:42:03,145 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:42:03,155 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:42:40,670 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 10616 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:42:40,672 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:42:40,672 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:42:41,644 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.171 seconds (JVM running for 1.558)
+2021-12-15 14:42:47,470 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:42:47,482 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:42:47,493 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:43:26,157 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:43:26,158 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:43:26,158 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:44:15,810 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 29712 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:44:15,812 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:44:15,812 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:44:16,857 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.241 seconds (JVM running for 1.652)
+2021-12-15 14:44:19,320 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:44:19,332 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:44:19,343 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:44:20,428 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:44:20,429 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:44:20,429 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:44:26,891 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:44:26,891 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:44:26,892 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:45:12,963 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 33256 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:45:12,965 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:45:12,965 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:45:13,937 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.162 seconds (JVM running for 1.571)
+2021-12-15 14:45:22,916 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:45:22,927 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:45:22,937 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:45:44,208 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 26256 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:45:44,210 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:45:44,210 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:45:45,217 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.204 seconds (JVM running for 1.597)
+2021-12-15 14:45:49,199 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:45:49,211 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:45:49,222 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:46:40,953 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 8736 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:46:40,955 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:46:40,955 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:46:41,901 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.149 seconds (JVM running for 1.54)
+2021-12-15 14:46:45,706 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:46:45,718 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:46:45,729 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:46:46,964 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:46:46,964 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:46:46,965 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:48:29,278 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 26044 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:48:29,279 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:48:29,280 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:48:30,283 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.211 seconds (JVM running for 1.613)
+2021-12-15 14:48:32,742 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:48:32,754 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:48:32,765 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:48:58,384 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:48:58,384 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:48:58,385 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:57:03,823 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 10800 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:57:03,824 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:57:03,824 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:57:04,825 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.191 seconds (JVM running for 1.586)
+2021-12-15 14:57:07,585 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:57:07,598 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:57:07,608 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:58:35,252 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 27988 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:58:35,254 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:58:35,254 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:58:36,239 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.182 seconds (JVM running for 1.57)
+2021-12-15 14:58:38,428 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:58:38,441 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:58:38,452 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 14:59:41,603 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 34548 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 14:59:41,605 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 14:59:41,605 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 14:59:42,577 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.17 seconds (JVM running for 1.562)
+2021-12-15 14:59:48,910 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 14:59:48,922 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 14:59:48,933 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:00:48,454 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 9272 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:00:48,455 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:00:48,456 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:00:49,434 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.176 seconds (JVM running for 1.569)
+2021-12-15 15:00:52,306 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:00:52,318 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:00:52,329 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:01:07,215 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 29944 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:01:07,217 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:01:07,217 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:01:08,206 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.179 seconds (JVM running for 1.568)
+2021-12-15 15:01:15,559 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 10968 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:01:15,561 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:01:15,561 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:01:16,576 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.249 seconds (JVM running for 1.681)
+2021-12-15 15:02:01,925 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:02:01,938 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:02:01,948 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:02:50,038 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 17216 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:02:50,040 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:02:50,040 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:02:51,003 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.155 seconds (JVM running for 1.565)
+2021-12-15 15:02:55,186 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:02:55,198 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:02:55,209 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:03:24,271 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 17824 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:03:24,272 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:03:24,273 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:03:25,220 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.149 seconds (JVM running for 1.54)
+2021-12-15 15:03:26,789 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:03:26,801 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:03:26,813 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:04:17,377 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 30644 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:04:17,378 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:04:17,378 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:04:18,349 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.162 seconds (JVM running for 1.558)
+2021-12-15 15:04:31,949 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 11032 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:04:31,951 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:04:31,952 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:04:32,946 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.184 seconds (JVM running for 1.574)
+2021-12-15 15:04:48,430 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:04:48,442 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:04:48,453 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:04:53,212 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:04:53,212 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:04:53,213 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:05:57,116 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 22304 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:05:57,118 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:05:57,118 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:05:58,109 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.187 seconds (JVM running for 1.58)
+2021-12-15 15:06:03,117 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:06:03,129 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:06:03,140 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:06:22,619 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 30112 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:06:22,621 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:06:22,621 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:06:23,620 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.197 seconds (JVM running for 1.595)
+2021-12-15 15:06:29,793 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:06:29,806 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:06:29,815 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:07:08,437 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 32188 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:07:08,439 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:07:08,439 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:07:09,417 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.168 seconds (JVM running for 1.561)
+2021-12-15 15:07:11,454 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:07:11,467 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:07:11,477 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:07:57,790 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 21220 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:07:57,792 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:07:57,792 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:07:58,773 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.176 seconds (JVM running for 1.568)
+2021-12-15 15:08:01,228 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:08:01,241 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:08:01,252 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:09:02,081 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 27204 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:09:02,083 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:09:02,083 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:09:03,052 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.158 seconds (JVM running for 1.564)
+2021-12-15 15:09:06,629 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:09:06,642 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:09:06,652 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:09:11,614 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:09:11,614 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:09:11,615 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:11:00,872 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 1704 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:11:00,874 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:11:00,874 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:11:01,860 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.204 seconds (JVM running for 1.594)
+2021-12-15 15:11:15,987 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 11128 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:11:15,989 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:11:15,989 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:11:16,965 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.175 seconds (JVM running for 1.566)
+2021-12-15 15:11:20,300 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:11:20,313 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:11:20,323 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:11:45,931 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 1452 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:11:45,932 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:11:45,933 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:11:46,892 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.16 seconds (JVM running for 1.552)
+2021-12-15 15:11:49,326 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:11:49,339 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:11:49,350 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:12:21,735 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 8340 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:12:21,737 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:12:21,737 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:12:22,717 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.179 seconds (JVM running for 1.58)
+2021-12-15 15:12:25,300 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:12:25,313 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:12:25,324 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:12:59,461 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 31944 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:12:59,463 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:12:59,463 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:13:00,468 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.217 seconds (JVM running for 1.649)
+2021-12-15 15:13:22,964 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 26152 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 15:13:22,965 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 15:13:22,966 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 15:13:23,947 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.176 seconds (JVM running for 1.565)
+2021-12-15 15:13:28,617 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:13:28,630 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:13:28,641 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:13:55,787 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:13:55,787 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:13:55,788 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:14:28,086 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:14:28,086 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:14:28,087 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:14:52,663 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:14:52,663 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:14:52,664 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:16:13,764 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:16:13,764 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 96edd9cf47344b77bec163679db207f2~(String)
+2021-12-15 15:16:13,765 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:21:58,094 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-15 15:21:58,094 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/63.08566.jpg(String), mh(String)
+2021-12-15 15:21:58,095 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-15 15:21:58,098 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/693571933afb456095ae33e810332555
+2021-12-15 15:21:58,175 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/693571933afb456095ae33e810332555~.jpg！
+2021-12-15 15:21:58,177 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-15 15:21:58,177 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 693571933afb456095ae33e810332555~(String), http://192.168.1.20:1112/myFile/manhua/63.08566.jpg(String), http://192.168.1.20:1112/myFile/manhua/693571933afb456095ae33e810332555~.jpg(String), mh(String)
+2021-12-15 15:21:58,200 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-15 15:22:08,957 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:22:08,958 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 693571933afb456095ae33e810332555~(String)
+2021-12-15 15:22:08,958 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 15:22:11,951 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 15:22:11,951 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 693571933afb456095ae33e810332555~(String)
+2021-12-15 15:22:11,952 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 16:07:30,184 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-15 16:07:30,185 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/68.70574.jpg(String), mh(String)
+2021-12-15 16:07:30,187 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-15 16:07:30,187 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/2242d73988cb48958bff5fb959c90c2d
+2021-12-15 16:07:30,210 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/2242d73988cb48958bff5fb959c90c2d~.jpg！
+2021-12-15 16:07:30,211 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-15 16:07:30,212 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2242d73988cb48958bff5fb959c90c2d~(String), http://192.168.1.20:1112/myFile/manhua/68.70574.jpg(String), http://192.168.1.20:1112/myFile/manhua/2242d73988cb48958bff5fb959c90c2d~.jpg(String), mh(String)
+2021-12-15 16:07:30,228 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-15 16:07:39,171 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 16:07:39,172 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2242d73988cb48958bff5fb959c90c2d~(String)
+2021-12-15 16:07:39,174 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 16:07:41,121 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 16:07:41,122 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2242d73988cb48958bff5fb959c90c2d~(String)
+2021-12-15 16:07:41,123 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 16:27:00,671 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-15 16:27:00,672 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/68.86324.jpg(String), mh(String)
+2021-12-15 16:27:00,673 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-15 16:27:00,674 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/b3bf6daae8e946fbba2c799d57fc289e
+2021-12-15 16:27:00,697 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/b3bf6daae8e946fbba2c799d57fc289e~.jpg！
+2021-12-15 16:27:00,698 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-15 16:27:00,699 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: b3bf6daae8e946fbba2c799d57fc289e~(String), http://192.168.1.20:1112/myFile/manhua/68.86324.jpg(String), http://192.168.1.20:1112/myFile/manhua/b3bf6daae8e946fbba2c799d57fc289e~.jpg(String), mh(String)
+2021-12-15 16:27:00,714 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-15 16:33:13,882 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-15 16:33:13,883 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/62.60878.jpg(String), mh(String)
+2021-12-15 16:33:13,884 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-15 16:33:13,885 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/14c7e0e8aa144549b0049a4a459b5e1b
+2021-12-15 16:33:13,908 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/14c7e0e8aa144549b0049a4a459b5e1b~.jpg！
+2021-12-15 16:33:13,909 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-15 16:33:13,909 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 14c7e0e8aa144549b0049a4a459b5e1b~(String), http://192.168.1.20:1112/myFile/manhua/62.60878.jpg(String), http://192.168.1.20:1112/myFile/manhua/14c7e0e8aa144549b0049a4a459b5e1b~.jpg(String), mh(String)
+2021-12-15 16:33:13,924 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-15 16:34:29,063 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-15 16:34:29,063 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/137.751.jpg(String), mh(String)
+2021-12-15 16:34:29,064 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-15 16:34:29,064 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/7effc792858b4e2aa2c5c525418d8d23
+2021-12-15 16:34:29,086 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/7effc792858b4e2aa2c5c525418d8d23~.jpg！
+2021-12-15 16:34:29,087 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-15 16:34:29,087 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7effc792858b4e2aa2c5c525418d8d23~(String), http://192.168.1.20:1112/myFile/manhua/137.751.jpg(String), http://192.168.1.20:1112/myFile/manhua/7effc792858b4e2aa2c5c525418d8d23~.jpg(String), mh(String)
+2021-12-15 16:34:29,108 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-15 16:38:39,557 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 6836 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 16:38:39,559 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 16:38:39,559 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 16:38:40,537 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.169 seconds (JVM running for 1.576)
+2021-12-15 16:39:20,239 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 5104 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 16:39:20,241 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 16:39:20,242 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 16:39:21,208 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.166 seconds (JVM running for 1.622)
+2021-12-15 16:46:20,391 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 33712 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 16:46:20,392 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 16:46:20,393 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 16:46:21,376 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.18 seconds (JVM running for 1.577)
+2021-12-15 16:48:07,874 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 6484 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 16:48:07,876 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 16:48:07,877 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 16:48:08,888 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.218 seconds (JVM running for 1.676)
+2021-12-15 16:49:20,114 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 19280 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 16:49:20,116 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 16:49:20,117 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 16:49:21,109 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.191 seconds (JVM running for 1.587)
+2021-12-15 16:49:51,599 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 12296 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 16:49:51,601 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 16:49:51,602 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 16:49:52,657 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.281 seconds (JVM running for 1.728)
+2021-12-15 16:51:01,538 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 27944 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 16:51:01,540 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 16:51:01,541 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 16:51:02,562 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.219 seconds (JVM running for 1.621)
+2021-12-15 16:53:04,761 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 19292 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 16:53:04,763 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 16:53:04,763 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 16:53:05,757 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.188 seconds (JVM running for 1.581)
+2021-12-15 16:58:08,692 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 8208 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 16:58:08,693 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 16:58:08,693 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 16:58:09,683 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.198 seconds (JVM running for 1.615)
+2021-12-15 17:00:57,408 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 29692 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:00:57,410 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:00:57,410 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:00:58,390 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.187 seconds (JVM running for 1.585)
+2021-12-15 17:02:24,251 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 30320 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:02:24,253 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:02:24,253 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:02:25,234 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.186 seconds (JVM running for 1.582)
+2021-12-15 17:05:34,227 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 23392 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:05:34,229 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:05:34,230 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:05:35,245 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.221 seconds (JVM running for 1.633)
+2021-12-15 17:06:35,493 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 18608 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:06:35,495 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:06:35,495 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:06:36,486 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.206 seconds (JVM running for 1.606)
+2021-12-15 17:06:49,070 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 11604 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:06:49,072 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:06:49,072 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:06:50,065 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.184 seconds (JVM running for 1.578)
+2021-12-15 17:07:44,245 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 20464 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:07:44,247 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:07:44,247 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:07:45,244 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.19 seconds (JVM running for 1.584)
+2021-12-15 17:08:20,008 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 24492 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:08:20,009 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:08:20,010 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:08:21,091 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.315 seconds (JVM running for 1.765)
+2021-12-15 17:09:29,352 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 20596 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:09:29,353 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:09:29,354 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:09:30,401 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.255 seconds (JVM running for 1.705)
+2021-12-15 17:10:19,477 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 26116 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:10:19,480 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:10:19,480 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:10:20,525 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.251 seconds (JVM running for 1.678)
+2021-12-15 17:11:09,026 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 15764 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:11:09,028 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:11:09,028 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:11:10,035 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.204 seconds (JVM running for 1.605)
+2021-12-15 17:11:41,044 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 1612 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:11:41,046 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:11:41,046 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:11:42,151 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.327 seconds (JVM running for 1.751)
+2021-12-15 17:25:51,259 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 28884 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:25:51,260 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:25:51,261 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:25:52,256 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.196 seconds (JVM running for 1.61)
+2021-12-15 17:27:03,305 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 17936 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:27:03,307 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:27:03,307 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:27:04,328 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.234 seconds (JVM running for 1.663)
+2021-12-15 17:27:30,094 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 848 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:27:30,096 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:27:30,096 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:27:31,167 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.284 seconds (JVM running for 1.717)
+2021-12-15 17:31:04,907 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 1416 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-15 17:31:04,909 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-15 17:31:04,909 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-15 17:31:05,892 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.18 seconds (JVM running for 1.679)
+2021-12-15 17:35:04,928 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 17:35:04,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2242d73988cb48958bff5fb959c90c2d~(String)
+2021-12-15 17:35:04,952 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 17:55:52,863 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-15 17:55:52,864 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/68.18745.jpg(String), mh(String)
+2021-12-15 17:55:52,865 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-15 17:55:52,868 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/6a9f8fa572064439b226edc275612d16
+2021-12-15 17:55:52,941 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/6a9f8fa572064439b226edc275612d16~.jpg！
+2021-12-15 17:55:52,942 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-15 17:55:52,942 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6a9f8fa572064439b226edc275612d16~(String), http://192.168.1.20:1112/myFile/manhua/68.18745.jpg(String), http://192.168.1.20:1112/myFile/manhua/6a9f8fa572064439b226edc275612d16~.jpg(String), mh(String)
+2021-12-15 17:55:52,957 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-15 17:56:01,576 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 17:56:01,576 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6a9f8fa572064439b226edc275612d16~(String)
+2021-12-15 17:56:01,581 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 17:56:04,126 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 17:56:04,127 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6a9f8fa572064439b226edc275612d16~(String)
+2021-12-15 17:56:04,128 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-15 17:56:29,507 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-15 17:56:29,507 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6a9f8fa572064439b226edc275612d16~(String)
+2021-12-15 17:56:29,508 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

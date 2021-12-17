@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:thSys="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>妈妈，我要上春晚了</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+
+<style>
+    .titleh2{
+        align-content: center;
+
+    }
+    .box4 {
+
+        margin-top:100px;
+        margin-bottom:100px;
+        margin-right:50px;
+        margin-left:50px;
+
+    }
+    .box5{
+        margin-top:100px;
+
+    }
+
+</style>
+
+<body>
+
+<div class="box4">
+    <h1 align="center">妈妈，我要上春晚了</h1>
+    <div class="box5">
+        <h4 align="center">春晚三十年来</h4>
+
+    </div>
+    <div align="center">
+
+        <form th:action="@{/view/test}" method="get">
+            <button name="id" th:value="${id}" type="submit"  class="btn btn-primary">回顾春晚</button>
+        </form>
+    </div>
+</div>
+
+
+
+</body>
+</html>

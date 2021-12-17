@@ -8,10 +8,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <result property="id"    column="id"    />
         <result property="fileUrl"    column="file_url"    />
         <result property="qrCodeUrl"    column="qr_code_url"    />
+        <result property="type"    column="type"    />
     </resultMap>
 
     <sql id="selectAlFileVo">
-        select id, file_url, qr_code_url  from al_file
+        select id, file_url, qr_code_url,type  from al_file
     </sql>
 
     <select id="selectAlFileList" parameterType="AlFile" resultMap="AlFileResult">
@@ -19,6 +20,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <where>  
             <if test="fileUrl != null  and fileUrl != ''"> and file_url = #{fileUrl}</if>
             <if test="qrCodeUrl != null  and qrCodeUrl != ''"> and qr_code_url = #{qrCodeUrl}</if>
+            <if test="type != null  and type != ''"> and qr_code_url = #{type}</if>
         </where>
     </select>
     
@@ -33,12 +35,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <if test="id != null and id != ''">id,</if>
             <if test="fileUrl != null and fileUrl != ''">file_url,</if>
             <if test="qrCodeUrl != null and qrCodeUrl != ''">qr_code_url,</if>
+            <if test="type != null and type != ''">type,</if>
 
          </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
             <if test="id != null and id != ''">#{id},</if>
             <if test="fileUrl != null and fileUrl != ''">#{fileUrl},</if>
             <if test="qrCodeUrl != null and qrCodeUrl != ''">#{qrCodeUrl},</if>
+            <if test="type != null and type != ''">#{type},</if>
 
          </trim>
     </insert>
@@ -48,6 +52,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <trim prefix="SET" suffixOverrides=",">
             <if test="fileUrl != null and fileUrl != ''">file_url = #{fileUrl},</if>
             <if test="qrCodeUrl != null and qrCodeUrl != ''">qr_code_url = #{qrCodeUrl},</if>
+            <if test="type != null and type != ''">qr_code_url = #{type},</if>
         </trim>
         where id = #{id}
     </update>

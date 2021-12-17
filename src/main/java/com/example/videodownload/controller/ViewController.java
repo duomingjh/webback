@@ -6,10 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.net.FileNameMap;
 import java.net.URLConnection;
@@ -38,6 +35,12 @@ public class ViewController {
         mmap.put("fileUrl", alFile.getFileUrl());
 
         mmap.put("fileType", getFileType(alFile.getFileUrl()));
+        mmap.put("id",id);
+        if(alFile.getType()!=null&&!alFile.getType().equals("")&&alFile.getType().equals("mh")){
+            mmap.put("type",alFile.getType());
+            return "view/manhua";
+        }
+
         if(alFile.getId().contains("~")){
 
             return "view/index3";
@@ -48,6 +51,13 @@ public class ViewController {
 
         }
 
+    }
+    @GetMapping("/test")
+    public String Demotest(@RequestParam("id") String id,ModelMap mmap){
+        System.out.println(id);
+        AlFile alFile = iAlFileService.selectAlFileById(id);
+        mmap.put("fileUrl", alFile.getFileUrl());
+        return "view/mhview";
     }
 
     @GetMapping("/video/{id}")
