@@ -1,0 +1,119 @@
+2022-09-21 10:14:34,002 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 25432 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-21 10:14:34,006 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-21 10:14:34,006 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-21 10:14:35,619 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-09-21 10:14:35,620 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-09-21 10:14:35,620 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-09-21 10:14:36,889 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 3.389 seconds (JVM running for 4.458)
+2022-09-21 10:15:30,703 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:15:30,728 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663726530277.png(String), hj(String)
+2022-09-21 10:15:30,773 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:15:30,784 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/9a5cef7a15394e01ba4050ef6c4ba7e7
+2022-09-21 10:15:31,041 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/9a5cef7a15394e01ba4050ef6c4ba7e7~.jpg！
+2022-09-21 10:15:31,043 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:15:31,044 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9a5cef7a15394e01ba4050ef6c4ba7e7~(String), http://192.168.1.8:80/myFile/hj/1663726530277.png(String), http://192.168.1.8:80/myFile/hj/9a5cef7a15394e01ba4050ef6c4ba7e7~.jpg(String), hj(String)
+2022-09-21 10:15:31,059 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:16:50,327 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:16:50,328 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663726610320.png(String), hj(String)
+2022-09-21 10:16:50,329 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:16:50,329 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/5a00491b5c8f45418da2cbacd8005887
+2022-09-21 10:16:50,364 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/5a00491b5c8f45418da2cbacd8005887~.jpg！
+2022-09-21 10:16:50,366 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:16:50,367 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5a00491b5c8f45418da2cbacd8005887~(String), http://192.168.1.8:80/myFile/hj/1663726610320.png(String), http://192.168.1.8:80/myFile/hj/5a00491b5c8f45418da2cbacd8005887~.jpg(String), hj(String)
+2022-09-21 10:16:50,381 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:17:16,633 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:17:16,634 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663726636627.png(String), hj(String)
+2022-09-21 10:17:16,635 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:17:16,635 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/f5a33f77e874417cbe7b8eb2e368f319
+2022-09-21 10:17:16,689 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/f5a33f77e874417cbe7b8eb2e368f319~.jpg！
+2022-09-21 10:17:16,690 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:17:16,691 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: f5a33f77e874417cbe7b8eb2e368f319~(String), http://192.168.1.8:80/myFile/hj/1663726636627.png(String), http://192.168.1.8:80/myFile/hj/f5a33f77e874417cbe7b8eb2e368f319~.jpg(String), hj(String)
+2022-09-21 10:17:16,705 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:18:15,857 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:18:15,858 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663726695850.png(String), hj(String)
+2022-09-21 10:18:15,859 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:18:15,859 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/0010a6a6070e445e80c49f3d8c977f7d
+2022-09-21 10:18:15,894 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/0010a6a6070e445e80c49f3d8c977f7d~.jpg！
+2022-09-21 10:18:15,895 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:18:15,896 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0010a6a6070e445e80c49f3d8c977f7d~(String), http://192.168.1.8:80/myFile/hj/1663726695850.png(String), http://192.168.1.8:80/myFile/hj/0010a6a6070e445e80c49f3d8c977f7d~.jpg(String), hj(String)
+2022-09-21 10:18:15,958 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:21:32,935 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:21:32,936 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663726892925.png(String), hj(String)
+2022-09-21 10:21:32,937 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:21:32,938 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/06204e695fd547a5b0311eebd70247f3
+2022-09-21 10:21:32,982 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/06204e695fd547a5b0311eebd70247f3~.jpg！
+2022-09-21 10:21:32,983 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:21:32,984 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 06204e695fd547a5b0311eebd70247f3~(String), http://192.168.1.8:80/myFile/hj/1663726892925.png(String), http://192.168.1.8:80/myFile/hj/06204e695fd547a5b0311eebd70247f3~.jpg(String), hj(String)
+2022-09-21 10:21:32,998 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:43:42,063 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:43:42,064 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663728222053.png(String), hj(String)
+2022-09-21 10:43:42,065 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:43:42,066 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/f753845f2d4b4150950c082881869527
+2022-09-21 10:43:42,095 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/f753845f2d4b4150950c082881869527~.jpg！
+2022-09-21 10:43:42,096 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:43:42,096 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: f753845f2d4b4150950c082881869527~(String), http://192.168.1.8:80/myFile/hj/1663728222053.png(String), http://192.168.1.8:80/myFile/hj/f753845f2d4b4150950c082881869527~.jpg(String), hj(String)
+2022-09-21 10:43:42,117 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:43:51,659 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:43:51,660 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663728231652.png(String), hj(String)
+2022-09-21 10:43:51,661 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:43:51,662 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/906a8e4b689f4827a647d9c796d0b85e
+2022-09-21 10:43:51,692 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/906a8e4b689f4827a647d9c796d0b85e~.jpg！
+2022-09-21 10:43:51,693 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:43:51,694 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 906a8e4b689f4827a647d9c796d0b85e~(String), http://192.168.1.8:80/myFile/hj/1663728231652.png(String), http://192.168.1.8:80/myFile/hj/906a8e4b689f4827a647d9c796d0b85e~.jpg(String), hj(String)
+2022-09-21 10:43:51,706 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:44:29,786 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:44:29,787 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663728269779.png(String), hj(String)
+2022-09-21 10:44:29,788 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:44:29,789 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/d22ac4bda05d4274bada8b79bddadc51
+2022-09-21 10:44:29,819 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/d22ac4bda05d4274bada8b79bddadc51~.jpg！
+2022-09-21 10:44:29,820 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:44:29,821 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: d22ac4bda05d4274bada8b79bddadc51~(String), http://192.168.1.8:80/myFile/hj/1663728269779.png(String), http://192.168.1.8:80/myFile/hj/d22ac4bda05d4274bada8b79bddadc51~.jpg(String), hj(String)
+2022-09-21 10:44:29,832 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:47:03,532 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:47:03,533 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663728423524.png(String), hj(String)
+2022-09-21 10:47:03,534 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:47:03,534 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/83a0beb7f24c4d2c822a4d6cb21367a0
+2022-09-21 10:47:03,566 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/83a0beb7f24c4d2c822a4d6cb21367a0~.jpg！
+2022-09-21 10:47:03,567 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:47:03,568 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 83a0beb7f24c4d2c822a4d6cb21367a0~(String), http://192.168.1.8:80/myFile/hj/1663728423524.png(String), http://192.168.1.8:80/myFile/hj/83a0beb7f24c4d2c822a4d6cb21367a0~.jpg(String), hj(String)
+2022-09-21 10:47:03,583 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:47:15,921 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:47:15,922 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663728435915.png(String), hj(String)
+2022-09-21 10:47:15,923 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:47:15,924 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/541c08df787840ad9ce80989e648189a
+2022-09-21 10:47:15,966 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/541c08df787840ad9ce80989e648189a~.jpg！
+2022-09-21 10:47:15,966 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:47:15,967 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 541c08df787840ad9ce80989e648189a~(String), http://192.168.1.8:80/myFile/hj/1663728435915.png(String), http://192.168.1.8:80/myFile/hj/541c08df787840ad9ce80989e648189a~.jpg(String), hj(String)
+2022-09-21 10:47:15,983 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:50:09,098 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:50:09,098 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663728609071.png(String), hj(String)
+2022-09-21 10:50:09,099 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:50:09,099 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/9afda5dff37344299d03a70865258589
+2022-09-21 10:50:09,128 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/9afda5dff37344299d03a70865258589~.jpg！
+2022-09-21 10:50:09,129 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:50:09,130 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9afda5dff37344299d03a70865258589~(String), http://192.168.1.8:80/myFile/hj/1663728609071.png(String), http://192.168.1.8:80/myFile/hj/9afda5dff37344299d03a70865258589~.jpg(String), hj(String)
+2022-09-21 10:50:09,144 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:50:39,722 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:50:39,722 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663728639714.png(String), hj(String)
+2022-09-21 10:50:39,723 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:50:39,723 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/29b3ba85a3f84ef0a3f07729da89a065
+2022-09-21 10:50:39,753 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/29b3ba85a3f84ef0a3f07729da89a065~.jpg！
+2022-09-21 10:50:39,754 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:50:39,754 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 29b3ba85a3f84ef0a3f07729da89a065~(String), http://192.168.1.8:80/myFile/hj/1663728639714.png(String), http://192.168.1.8:80/myFile/hj/29b3ba85a3f84ef0a3f07729da89a065~.jpg(String), hj(String)
+2022-09-21 10:50:39,768 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:55:10,635 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:55:10,635 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663728910628.png(String), hj(String)
+2022-09-21 10:55:10,637 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:55:10,637 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/6dd6f9f459184b5b9a98cc6ee7a628c0
+2022-09-21 10:55:10,663 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/6dd6f9f459184b5b9a98cc6ee7a628c0~.jpg！
+2022-09-21 10:55:10,663 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:55:10,664 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6dd6f9f459184b5b9a98cc6ee7a628c0~(String), http://192.168.1.8:80/myFile/hj/1663728910628.png(String), http://192.168.1.8:80/myFile/hj/6dd6f9f459184b5b9a98cc6ee7a628c0~.jpg(String), hj(String)
+2022-09-21 10:55:10,680 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-21 10:55:45,627 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-09-21 10:55:45,628 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.8:80/myFile/hj/1663728945621.png(String), hj(String)
+2022-09-21 10:55:45,629 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-21 10:55:45,630 INFO (AlFileServiceImpl.java:112)- 二维码的内容链接------->http://192.168.1.8:80/view/dda6ea750e0a4a32ba4a8f3dcce39922
+2022-09-21 10:55:45,658 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/hj/dda6ea750e0a4a32ba4a8f3dcce39922~.jpg！
+2022-09-21 10:55:45,659 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-09-21 10:55:45,659 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: dda6ea750e0a4a32ba4a8f3dcce39922~(String), http://192.168.1.8:80/myFile/hj/1663728945621.png(String), http://192.168.1.8:80/myFile/hj/dda6ea750e0a4a32ba4a8f3dcce39922~.jpg(String), hj(String)
+2022-09-21 10:55:45,675 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

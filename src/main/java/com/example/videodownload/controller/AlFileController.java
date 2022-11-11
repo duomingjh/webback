@@ -4,7 +4,6 @@ import com.example.videodownload.domain.AjaxResult;
 import com.example.videodownload.domain.AlFile;
 import com.example.videodownload.service.IAlFileService;
 import com.example.videodownload.service.QRCodeService;
-import jdk.nashorn.internal.runtime.Debug;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -116,16 +115,16 @@ public AjaxResult uploadfile(MultipartFile file,String filename,String type){
         if(!folder.exists()&&!folder.isDirectory()){
             folder.mkdirs();
         }
-        String fileNa=file.getOriginalFilename();
-        File dest=new File(fileDir+filename+"/"+fileNa);
+        String fileNa=String.valueOf(System.currentTimeMillis());
+        File dest=new File(fileDir+filename+"/"+fileNa+".png");
         try {
             file.transferTo(dest);
-            String  fileUrl=serverUrl+"/myFile/"+filename+"/"+fileNa;
+            String  fileUrl=serverUrl+"/myFile/"+filename+"/"+fileNa+".png";
             AlFile alFile=new AlFile();
             alFile.setFileUrl(fileUrl);
             alFile.setType(type);
             String  qrCodeFileUrl=iAlFileService.uploadAlFile(alFile,filename);
-            return AjaxResult.success("success",qrCodeFileUrl);
+            return AjaxResult.success("success",alFile);
         }catch (IOException e){
             log.error(e.getMessage(), e);
 

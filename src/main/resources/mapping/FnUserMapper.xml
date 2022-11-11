@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.videodownload.mapper.FnUserMapper">
+    <select id="SelectAll" resultType="com.example.videodownload.domain.FnUser">
+        select * from fnuser
+    </select>
+
+    <select id="SelectByPhone" resultType="com.example.videodownload.domain.FnUser">
+        select * from fnuser where phone=#{phone}
+    </select>
+    <select id="SelectByName" resultType="com.example.videodownload.domain.FnUser">
+        select * from fnuser where name=#{name}
+    </select>
+    <select id="SelectByPrize" resultType="com.example.videodownload.domain.FnUser">
+        select * from fnuser where prize=#{prize}
+    </select>
+    <insert id="insert" >
+        insert  into fnuser(phone,name,wxname,company,prize,date,`read`,job) value (#{phone},#{name},#{wxname},#{company},#{prize},#{date},#{read},#{job})
+    </insert>
+    <update id="update" >
+        update fnuser set phone=#{phone},name=#{name},wxname=#{wxname},company=#{company},prize=#{prize},date=#{date},`read`=#{read},job=#{job} where phone=#{phone}
+    </update>
+</mapper>

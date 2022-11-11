@@ -14,7 +14,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     <sql id="selectAlFileVo">
         select id, file_url, qr_code_url,type  from al_file
     </sql>
-
+    <select id="selectf"  resultType="com.example.videodownload.domain.Persons">
+       select * from persons
+    </select>
     <select id="selectAlFileList" parameterType="AlFile" resultMap="AlFileResult">
         <include refid="selectAlFileVo"/>
         <where>  
@@ -28,7 +30,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <include refid="selectAlFileVo"/>
         where id = #{id}
     </select>
-        
+    <insert id="addUser" parameterType ="com.example.videodownload.domain.Persons">
+        insert  into Persons(date,count,count1)
+        values (#{date},#{count },#{count1})
+    </insert>
     <insert id="insertAlFile" parameterType="AlFile">
         insert into al_file
         <trim prefix="(" suffix=")" suffixOverrides=",">

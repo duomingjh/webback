@@ -1,0 +1,175 @@
+2022-10-26 09:12:54,705 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-MNQ005U with PID 11960 (E:\test\web\videodownload\videodownload\target\classes started by YAHD in E:\test\web\videodownload\videodownload)
+2022-10-26 09:12:54,707 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-10-26 09:12:54,708 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-10-26 09:12:55,897 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-26 09:12:55,898 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-26 09:12:55,898 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-10-26 09:12:57,225 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 2.971 seconds (JVM running for 4.104)
+2022-10-26 09:13:02,470 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:13:02,487 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:13:02,500 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:13:02,503 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:13:02,503 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 888(String)
+2022-10-26 09:13:02,506 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:13:02,506 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update fnuser set phone=?,name=?,wxname=?,company=?,prize=?,date=?,`read`=?,job=? where phone=? 
+2022-10-26 09:13:02,507 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 888(String), null, null, null, 111115(String), null, null, null, 888(String)
+2022-10-26 09:13:02,515 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-10-26 09:13:02,515 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into fnuser(phone,name,wxname,company,prize,date,`read`,job) value (?,?,?,?,?,?,?,?) 
+2022-10-26 09:13:02,515 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String), shui(String), 深喜。(String), 6666(String), 111114(String), 2022年10月26日(String), null, 6666(String)
+2022-10-26 09:13:02,521 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-10-26 09:13:15,380 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:13:15,381 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:13:15,395 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:13:15,399 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:13:15,399 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:13:15,401 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:13:37,010 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:13:37,011 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:13:37,012 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:13:37,012 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update fnuser set phone=?,name=?,wxname=?,company=?,prize=?,date=?,`read`=?,job=? where phone=? 
+2022-10-26 09:13:37,013 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String), shui(String), 深喜。(String), 6666(String), 111114(String), 2022年10月26日(String), 1(String), 6666(String), 77777777777(String)
+2022-10-26 09:13:37,021 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-10-26 09:13:46,141 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:13:46,141 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:13:46,143 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:13:51,313 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:13:51,314 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:13:51,315 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:13:54,654 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:13:54,655 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:13:54,656 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:14:38,059 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:14:38,059 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:14:38,060 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:14:56,946 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:14:56,946 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:14:56,947 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:15:02,883 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:15:02,884 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:15:02,885 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:15:09,796 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:15:09,796 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:15:09,797 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:15:12,013 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:15:12,014 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:15:12,015 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:15:38,003 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:15:38,003 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:15:38,005 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:15:41,403 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:15:41,403 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:15:41,404 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:15:47,395 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:15:47,395 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:15:47,397 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:15:50,568 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:15:50,568 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:15:50,569 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:16:30,291 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:16:30,291 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:16:30,293 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:16:31,444 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:16:31,445 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:16:31,446 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:16:44,232 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:16:44,232 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:16:44,233 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:16:56,105 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:16:56,105 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:16:56,106 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:16:58,026 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:16:58,026 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:16:58,027 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:17:02,090 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:17:02,090 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:17:02,091 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:17:08,293 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:17:08,293 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:17:08,294 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:17:08,299 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:17:08,299 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:17:08,300 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:17:30,086 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:17:30,086 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:17:30,087 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:17:32,879 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:17:32,880 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:17:32,881 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:17:33,980 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:17:33,980 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:17:33,981 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:17:42,284 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:17:42,284 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:17:42,284 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:17:42,284 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:17:42,285 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:17:42,285 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:18:34,740 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:18:34,740 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:18:34,741 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:18:36,599 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:18:36,599 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:18:36,600 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:18:41,462 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:18:41,462 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:18:41,464 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:18:43,251 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:18:43,251 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:18:43,253 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:18:45,051 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:18:45,051 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:18:45,052 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:18:46,603 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:18:46,603 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:18:46,604 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:18:55,232 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:18:55,232 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 77777777777(String)
+2022-10-26 09:18:55,234 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:19:39,834 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:19:39,834 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:19:39,834 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:19:39,835 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:19:39,835 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:19:39,835 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:19:54,343 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:19:54,344 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:19:54,344 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:20:12,006 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:20:12,007 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:20:12,007 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:21:13,773 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:21:13,773 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18885662312(String)
+2022-10-26 09:21:13,774 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:21:15,343 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:21:15,343 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18885662312(String)
+2022-10-26 09:21:15,345 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:21:19,678 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:21:19,678 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18885662312(String)
+2022-10-26 09:21:19,679 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:21:19,682 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:21:19,682 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18885662312(String)
+2022-10-26 09:21:19,683 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:21:26,125 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:21:26,126 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18885662312(String)
+2022-10-26 09:21:26,126 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:21:26,126 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18885662312(String)
+2022-10-26 09:21:26,127 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:21:26,127 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:21:33,669 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:21:33,669 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18885662312(String)
+2022-10-26 09:21:33,671 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:21:37,085 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:21:37,085 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18885662312(String)
+2022-10-26 09:21:37,086 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:21:39,667 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:21:39,668 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18885662312(String)
+2022-10-26 09:21:39,669 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-26 09:28:47,406 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:28:47,406 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:28:47,407 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:28:47,410 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:28:47,410 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:28:47,411 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-26 09:32:08,256 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-26 09:32:08,257 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: (String)
+2022-10-26 09:32:08,257 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0

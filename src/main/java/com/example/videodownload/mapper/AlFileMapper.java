@@ -1,8 +1,10 @@
 package com.example.videodownload.mapper;
 
-import java.util.List;
 import com.example.videodownload.domain.AlFile;
+import com.example.videodownload.domain.Persons;
 import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
 
 /**
  * AlFileMapper接口
@@ -63,4 +65,7 @@ public interface AlFileMapper
      * @return 结果
      */
     public int deleteAlFileByIds(String[] ids);
+
+    public  List<Persons> selectf();
+    public  void addUser(Persons persons);
 }

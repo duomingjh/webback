@@ -5,6 +5,7 @@ import java.util.List;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.lang.UUID;
 import com.example.videodownload.controller.AlFileController;
+
 import com.example.videodownload.service.QRCodeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,6 +42,8 @@ public class AlFileServiceImpl implements IAlFileService
     @Autowired
     private AlFileMapper alFileMapper;
 
+
+
     @Autowired
     private QRCodeService qrCodeService;
 
@@ -65,6 +68,7 @@ public class AlFileServiceImpl implements IAlFileService
     @Override
     public List<AlFile> selectAlFileList(AlFile alFile)
     {
+
         return alFileMapper.selectAlFileList(alFile);
     }
 

@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>幸福小镇</title>
+    <script type="text/javascript" th:src="@{/saveimg/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/saveimg/dom-to-image.min.js}"></script>
+    <script type="text/javascript" th:src="@{/saveimg/FileSaver.js}"></script>
+    <script type="text/javascript" th:src="@{/img/html2canvas.js}"></script>
+
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+</head>
+<style>
+
+
+    @font-face {
+        font-family: "Alibaba-PuHuiTi-Heavy";
+         src:url("/img/Alibaba-PuHuiTi-Heavy.ttf");
+
+        font-style: italic;
+    }
+    body,html{
+        margin: 0px;
+        background: url("/img/背景.png");
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-size:cover;
+        -webkit-background-size: cover;
+        height: 100%;
+        padding: 0;
+
+
+    }
+    html{
+        font-size:16px;
+    }
+    .bg{
+        position:absolute;
+        width: 100%;
+        height:100%;
+
+        font-size: 0;
+        line-height: 0;
+
+    }
+    .bg-img{
+        width: 100%;
+        border: none;
+        border-style: none;
+        overflow: hidden;
+        vertical-align: top;
+        display: block;
+        pointer-events:none;
+        margin-top: -2px
+    }
+    img{
+        border-style:none;
+        display: block;
+    }
+    .tirp{
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+    }
+    .step-wx{
+        top: 150rem;
+        left: 15rem;
+        position:absolute;
+    }
+    .help{
+        top: 195rem;
+        left: 32rem;
+        position: absolute;
+
+    }
+    .help1{
+        top: 195rem;
+        left: 32rem;
+        position: absolute;
+
+    }
+
+    @keyframes xing {
+        0% {
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(0.9);
+        }
+        50% {
+            transform: scale(1);
+        }
+        75% {
+            transform: scale(0.9);
+        }
+    }
+    .my_xing {
+        -webkit-animation-name: xing;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 6s;
+    }
+    .butman{
+        background: url("/img/男生.png");
+        background-repeat: no-repeat;
+        border: none;
+        background-size: 100%;
+
+    }
+    .butman1{
+        background: url("/img/返回.png");
+        background-repeat: no-repeat;
+        border: none;
+        background-size: 100%;
+
+    }
+    .butw{
+        background: url("/img/女生.png");
+        background-repeat: no-repeat;
+        border: none;
+        position: absolute;
+        background-size: 100%;
+    }
+    .butw1{
+        background: url("/img/二级/02.png");
+        background-repeat: no-repeat;
+        border: none;
+        position: absolute;
+        background-size: 100%;
+    }
+    .butw2{
+        background: url("/img/三级/生成海报.png");
+        background-repeat: no-repeat;
+        border: none;
+        position: absolute;
+        background-size: 100%;
+    }
+    .butw2{
+        background: url("/img/保存居民卡.png");
+        background-repeat: no-repeat;
+        border: none;
+        position: absolute;
+        background-size: 100%;
+    }
+    .dy{
+        background: url("/img/打印.png");
+        background-repeat: no-repeat;
+        border: none;
+        position: absolute;
+        background-size: 100%;
+    }
+    .dy1{
+        background: url("/img/打印1.png");
+        background-repeat: no-repeat;
+        border: none;
+        position: absolute;
+        background-size: 100%;
+    }
+    * {
+
+        outline: none;
+
+    }
+    .container > video {
+        position: absolute;
+        width: 100%; height: 100%;
+    }
+</style>
+<body >
+
+<div  style="position: absolute ;top: 28rem;left: 0rem;" id="jmk2">
+    <div id="frist" style="display: none" >
+        <div  id="1" onclick="fx()" style="position: absolute; margin-left: 4rem;margin-top: -16rem;height: 14rem;width: 14rem">
+            <img   src="/img/一级/白圈.png"  style="margin-left: 0rem;margin-top: 0rem;height: 17rem;width: 15rem">
+            <img   id="yt" src="/img/一级/男生/1.png" style=" position: absolute; margin-left: 0rem;margin-top: -17rem;height: 17rem;width: 15rem">
+        </div>
+        <div id="2" onclick="yf()" style="position: absolute; margin-left: 4rem;margin-top: 4rem;height: 14rem;width: 14rem">
+            <img    src="/img/一级/白圈.png"  style="margin-left: 0rem;margin-top: 0rem;height: 17rem;width: 15rem">
+            <img   id="yy" src="/img/一级/男生/2.png" style=" position: absolute; margin-left: 0rem;margin-top: -17rem;height: 17rem;width: 15rem">
+        </div>
+        <div id="3" onclick="kz()" style="position: absolute; margin-left: 4rem;margin-top: 24rem;height: 14rem;width: 14rem">
+            <img src="/img/一级/白圈.png"  style="margin-left: 0rem;margin-top: 0rem;height: 17rem;width: 15rem">
+            <img   id="yk" src="/img/一级/男生/3.png" style=" position: absolute; margin-left: 0rem;margin-top: -17rem;height: 17rem;width: 15em">
+        </div>
+        <div  id="4" onclick="xz()" style="position: absolute; margin-left: 4rem;margin-top: 44rem;height: 14rem;width: 14rem">
+            <img   src="/img/一级/白圈.png"  style="margin-left: 0rem;margin-top: 0rem;height: 17rem;width: 15rem">
+            <img   id="yx" src="/img/一级/男生/4.png" style=" position: absolute; margin-left: 0rem;margin-top: -17rem;height: 17rem;width: 15rem">
+        </div>
+        <div id="5" onclick="peis()" style="position: absolute; margin-left: 4rem;margin-top: 64rem;height: 14rem;width: 14rem">
+            <img  src="/img/一级/白圈.png"  style="margin-left: 0rem;margin-top: 0rem;height: 17rem;width: 15rem">
+            <img   id="yj" src="/img/一级/男生/5.png" style=" position: absolute; margin-left: 0rem;margin-top: -17rem;height: 17rem;width: 15rem">
+        </div>
+
+        <div  style="margin-left: 5rem;padding-left: 6rem;position: relative">
+            <div id="scimg" style="width: 0rem;height: 84rem;position: absolute;margin-left: -6rem;margin-top: 0rem">
+                <img id="bgk" src="/img/三级/背景/ESG.png" style="position: absolute;width: 49rem;height: 73rem;margin-left: 0rem;margin-top: 0rem;display: none">
+
+                <div id="rens" style="position: absolute; margin-left: 19rem;margin-top: -17rem;height: 36rem;width: 14rem">
+
+                    <img src="/img/一级/男生/0.png" id="ren"  style="margin-left: 0rem;margin-top: 0rem;width: 30rem">
+                    <div id="d1" style="margin-top: -88rem;margin-left: 0rem;width: 0rem;position: absolute"  >
+
+                        <img src="/img/二级/男/中 人物+装饰/1发型/11.png" id="rtf"  style="width: 30rem;display: none" >
+                    </div>
+
+                    <div id="d3" style="margin-top: -88rem;margin-left: 0rem;width: 0rem;position: absolute"  >
+
+                        <img src="/img/二级/男/中 人物+装饰/4鞋子/41.png" id="xz"  style="width: 30rem;display: none" >
+                    </div>
+                    <div  id="d4" style="margin-top: -88rem;margin-left: 0rem;width: 0rem;position: absolute"  >
+
+                        <img src="/img/二级/男/中 人物+装饰/3下装/31.png" id="rxz"  style="width: 30rem;display: none" >
+                    </div>
+                    <div id="d2" style="margin-top: -88rem;margin-left: 0rem;width: 0rem;position: absolute"  >
+
+                        <img src="/img/二级/男/中 人物+装饰/2上装/21.png" id="ryf"  style="width: 30rem;display: none" >
+                    </div>
+
+                    <div id="d5" style="margin-top: -88rem;margin-left: 0rem;width: 0rem;position: absolute"  >
+
+                        <img src="/img/二级/男/中 人物+装饰/5配饰/51.png" id="ps"  style="width: 30rem;display: none" >
+                    </div>
+
+                </div>
+                <img id="qcode"  src="/img/qc.png" style="display: none;position: absolute;margin-top: 56.4rem;margin-left: 37rem;width: 8.7rem;height: 8.7rem">
+                <div style="margin-top: 67.3rem">
+                    <input value="" id="intx" style=" color: #111111;font-style: italic;font-family:Alibaba-PuHuiTi-Heavy;display: none;font-weight: bold;position: absolute;margin-top: 0rem;margin-left: 41.8rem;width: 4rem;background-color:transparent;border:0;font-size: 1rem;height: 2.1rem;transform: scale(3.2)">
+
+                </div>
+            </div>
+        </div>
+        <img onclick="inputname()" src="/img/三级/点击输入代言人名称哦~.png" id="tx" style="position: absolute;margin-top: 61rem;margin-left: 42rem;width: 13rem;display: none">
+        <img id="bg1" onclick="gxbg(1)" src="/img/三级/诚信按钮.png" style="position: absolute;margin-top: 69rem;margin-left: 6rem;width: 0rem;box-shadow: -15px 8px 10px rgba(0,0,0,.5);">
+        <img id="bg2" onclick="gxbg(2)" src="/img/三级/微笑按钮.png" style="position: absolute;margin-top: 69rem;margin-left: 16rem;width: 0rem;box-shadow: -15px 8px 10px rgba(0,0,0,.5);">
+        <img id="bg3" onclick="gxbg(3)" src="/img/三级/ESG按钮.png" style="position: absolute;margin-top: 69rem;margin-left: 26rem;width: 0rem;box-shadow: -15px 8px 10px rgba(0,0,0,.5);">
+        <img id="bg4" onclick="gxbg(4)" src="/img/三级/谦逊按钮.png" style="position: absolute;margin-top: 69rem;margin-left: 36rem;width: 0rem;box-shadow: -15px 8px 10px rgba(0,0,0,.5);">
+
+
+    </div>
+    <button class="butman" id="but1" value="1" onclick="xzman()" style="height: 25rem;width: 13rem;margin-top: -6rem;margin-left: 23rem;position: absolute" ></button>
+   
+    <button class="butw" onclick="xzwom()" value="1" id="but2" style="height: 25rem;width: 13rem;margin-top: 36rem;margin-left: 23rem;position: absolute" ></button>
+    <button class="dy" onclick="dy()" value="1" id="dy" style="display: none;height: 25rem;width: 13rem;margin-top: 36rem;margin-left: 23rem;position: absolute" ></button>
+
+    <img id="xbtrip" src="/img/请选择性别.png" style="position: absolute;margin-top: 73rem;margin-left: 16rem">
+    <div id="two" style="position: absolute ;margin-top: -6rem;display: none">
+        <div style="position: absolute; margin-left: 4rem;margin-top: -16rem;height: 14rem;width: 14rem">
+            <img id="kt" src="/img/二级/男/左 按钮/0已选一级按钮/0.png"  style="margin-left: 0rem;margin-top: 0rem;height: 17rem;width: 15rem">
+            <img  id="21"  src="/img/二级/男/左 按钮/0已选一级按钮/1.png" style=" position: absolute; margin-left: 0rem;margin-top: -17rem;height: 17rem;width: 15rem">
+        </div>
+        <div   style="position: absolute; margin-left: 4rem;margin-top: 2rem;height: 14rem;width: 14rem">
+            <img onclick="fx1()" id="22" src="" style=" position: absolute; margin-left: 0rem;margin-top:0rem;width: 15rem">
+            <img id="tb" src=""  style="margin-left: 0rem;margin-top: 0rem;height: 17rem;width: 15rem">
+        </div>
+        <div style="position: absolute; margin-left: 4rem;margin-top: 19rem;height: 14rem;width: 14rem">
+            <img  onclick="fx2()" id="23" src="" style=" position: absolute; margin-left: 0rem;margin-top: 0rem;width: 15rem">
+
+            <img   id="yb" src=""  style="margin-left: 0rem;margin-top: 0rem;height: 17rem;width: 15rem">
+        </div>
+        <div style="position: absolute; margin-left: 4rem;margin-top: 36rem;height: 14rem;width: 14rem">
+            <img onclick="fx3()"  id="24"  src="" style=" position: absolute; margin-left: 0rem;margin-top: 0rem;width: 15em">
+            <img id="kb" src=""  style="margin-left: 0rem;margin-top: 0rem;height: 17rem;width: 15rem">
+
+        </div>
+        <div style="position: absolute; margin-left: 4rem;margin-top: 53rem;height: 14rem;width: 14rem">
+            <img  onclick="fx4()" id="25" src="" style=" position: absolute; margin-left: 0rem;margin-top: 0rem;width: 15rem">
+            <img  id="xb" src=""  style="margin-left: 0rem;margin-top: 0rem;height: 17rem;width: 15rem">
+
+        </div>
+        <div style="position: absolute; margin-left: 4rem;margin-top: 70rem;height: 14rem;width: 14rem">
+            <img  onclick="fx5()" id="26" src="" style=" position: absolute; margin-left: 0rem;margin-top: 0rem;width: 15rem">
+            <img id="jb" src=""  style="margin-left: 0rem;margin-top: 0rem;height: 17rem;width: 15rem">
+
+        </div>
+
+
+
+    </div>
+
+    <!-- <div>
+         <div id="test" >
+             <img src="/img/背景/ESG.png" style="margin-top: 0rem;padding-left: 0rem;width: 60rem;height:78rem">
+             <img src="/img/test.png" style="margin-top: -60rem;margin-left: 21rem;width: 20rem;height: 39rem">
+         </div>
+         <img src="/img/生成海报.png" type="button" id="btn" style="height: 8rem;width: 15rem;margin-top: 24rem;margin-left: 40rem" >
+     </div>-->
+
+</div>
+</body>
+<script>
+
+    var a=["/img/男.png","/img/女.png"];
+    var yjm=["/img/一级/男生/1.png","/img/一级/男生/2.png","/img/一级/男生/3.png","/img/一级/男生/4.png","/img/一级/男生/5.png"];
+    var yjw=["/img/一级/女生/1.png","/img/一级/女生/2.png","/img/一级/女生/3.png","/img/一级/女生/4.png","/img/一级/女生/5.png"];
+    var fxm=["/img/二级/男/左 按钮/1发型/11.png","/img/二级/男/左 按钮/1发型/12.png","/img/二级/男/左 按钮/1发型/13.png","/img/二级/男/左 按钮/1发型/14.png","/img/二级/男/左 按钮/1发型/15.png"];
+    var sym=["/img/二级/男/左 按钮/2上衣/21.png","/img/二级/男/左 按钮/2上衣/22.png","/img/二级/男/左 按钮/2上衣/23.png","/img/二级/男/左 按钮/2上衣/24.png","/img/二级/男/左 按钮/2上衣/25.png"];
+    var xkm=["/img/二级/男/左 按钮/3下装/31.png","/img/二级/男/左 按钮/3下装/32.png","/img/二级/男/左 按钮/3下装/33.png","/img/二级/男/左 按钮/3下装/34.png","/img/二级/男/左 按钮/3下装/35.png"];
+    var xzm=["/img/二级/男/左 按钮/4鞋子/41.png","/img/二级/男/左 按钮/1发型/12.png","/img/二级/男/左 按钮/1发型/13.png","/img/二级/男/左 按钮/1发型/14.png","/img/二级/男/左 按钮/1发型/15.png"];
+    var websocker=null;
+    var  xb=0;
+    var dptype=0;
+    var nsh=88;
+    var nsw=27;
+    var but1=0;
+    var but2=0;
+
+    var nstftop=-88;
+    var nstflef=-2;
+    var nstfw=30;
+    var nssytop=-82;
+    var nssylef=-3;
+    var nssyw=33;
+    var nskztop=-91;
+    var nskzlef=-4;
+    var nskzw=35;
+    var nsxztop=-86;
+    var nsxzlef=-3;
+    var nsxzw=32;
+    var nsxpstop=-93;
+    var nspslef=-4;
+    var nspsw=35;
+    var flag=[0,0,0,0,0,0,0,0];
+    var count=0;
+    var qcurl="";
+    var pturl="";
+    var imgurl='';
+    var day=0;
+
+    /* var urlRoot = '/img/kt/';
+     var indexRange = [1, 235];
+     var maxLength = indexRange[1] - indexRange[0] + 1;
+     // loading
+     var eleContainer = document.getElementById('container');
+     var eleLoading = document.getElementById('loading');
+     // 存储预加载的DOM对象和长度信息
+     var store = {
+         length: 0
+     };
+     // 图片序列预加载
+     for ( var start = indexRange[0]; start <= indexRange[1]; start++) {
+         (function (index) {
+             var img = new Image();
+             img.onload = function () {
+                 store.length++;
+                 // 存储预加载的图片对象
+                 store[index] = this;
+                 play();
+             };
+             img.onerror = function () {
+                 store.length++;
+                 play();
+             };
+             img.src = urlRoot + "t ("+index+")" + '.jpg';
+         })(start);
+     }
+
+     var play = function () {
+         // loading进度
+         var percent = Math.round(100 * store.length / maxLength);
+        // eleLoading.setAttribute('data-percent', percent);
+         //eleLoading.style.backgroundSize = percent + '% 100%';
+         // 全部加载完毕，无论成功还是失败
+         if (percent == 100) {
+             var index = indexRange[0];
+             eleContainer.innerHTML = '';
+             // 依次append图片对象
+             var step = function () {
+                 if (store[index - 1]) {
+                     eleContainer.removeChild(store[index - 1]);
+                 }
+                 eleContainer.appendChild(store[index]);
+                 // 序列增加
+                 index++;
+                 // 如果超过最大限制
+                 if (index <= indexRange[1]) {
+                     setTimeout(step, 60);
+                 } else {
+                     // 本段播放结束回调
+                     // 我这里就放一个重新播放的按钮
+                     //eleContainer.insertAdjacentHTML('beforeEnd', '<button onclick="play()">再看一遍英姿</button>');
+                     document.getElementById("j1").style.display='block';
+                     document.getElementById("j2").style.display='block';
+                     document.getElementById("container").style.display='none';
+
+                 }
+             };
+             // 等100%动画结束后执行播放
+             setTimeout(step, 100);
+         }
+     };*/
+    if('WebSocket' in window){
+        websocker=new WebSocket("ws://192.168.1.9:1112/websocket");
+    }else{
+        alert("不支持websocket");
+
+    }
+    window.onbeforeunload = function(){
+        websocker.close();
+    }
+
+    function getLeft(e) {
+        let X = e.getBoundingClientRect().left;
+        // var offset = e.offsetLeft - e.scrollLeft;
+        // if (e.offsetParent != null) offset += getLeft(e.offsetParent);
+        return X;
+    }
+    function scroll(){
+        //console.log("打印log日志");实时看下效果
+        console.log("开始滚动！");
+    }
+    function inputname() {
+
+        document.getElementById("intx").focus();
+    }
+    var scrollFunc = function (e) {
+        e = e || window.event;
+        if (e.wheelDelta) {  //第一步：先判断浏览器IE，谷歌滑轮事件
+            if (e.wheelDelta > 0) { //当滑轮向上滚动时
+                console.log("滑轮向上滚动");
+            }
+            if (e.wheelDelta < 0) { //当滑轮向下滚动时
+                var div = document.getElementById('divObj');
+                var reactObj = div.getBoundingClientRect();
+                console.log(reactObj.left);
+                console.log(reactObj.top);
+                console.log("滑轮向下滚动");
+            }
+        } else if (e.detail) {  //Firefox滑轮事件
+            if (e.detail> 0) { //当滑轮向上滚动时
+                console.log("滑轮向上滚动");
+            }
+            if (e.detail< 0) { //当滑轮向下滚动时
+                console.log("滑轮向下滚动");
+            }
+        }
+    }
+    //给页面绑定滑轮滚动事件
+    if (document.addEventListener) {//firefox
+        document.addEventListener('DOMMouseScroll', scrollFunc, false);
+    }
+    //滚动滑轮触发scrollFunc方法  //ie 谷歌
+    window.onmousewheel = document.onmousewheel = scrollFunc;
+    function dy() {
+        if(day==0){
+            day=1;
+            document.getElementById('dy').className='dy1';
+            var urlData={"imgurl":imgurl};
+            $.ajax({
+                type: "post",
+                url: "http://makeshows.cn:8989/view/add2",
+                // url: "http://192.168.1.9/view/add2",
+                dataType : "json",
+                contentType : "application/json",      //网上很多介绍加上此参数的，后来我发现不加入这个参数才会请求成功。
+                data: JSON.stringify(urlData),
+                success: function (d) {
+
+
+                    console.log( d);
+                }
+            });
+
+        }
+
+    }
+
+    function saveimg() {
+        /*  domtoimage.toJpeg(document.getElementById("scimg"), { quality: 0.9 })
+              .then(function (dataUrl) {
+                  //document.getElementById('test').src=dataUrl;
+                  var img = new Image();
+                  img.src = dataUrl;
+                  var urlData={"name":dataUrl};
+
+                  $.ajax({
+                      type: "post",
+                      // url: "http://makeshows.cn:8989/view/add",
+                      url: "http://127.0.0.1/view/add",
+                      dataType : "json",
+                      contentType : "application/json",      //网上很多介绍加上此参数的，后来我发现不加入这个参数才会请求成功。
+                      data: JSON.stringify(urlData),
+                      success: function (d) {
+                          console.log(d);
+                      }
+                  });
+
+              });*/
+
+
+        /*  dataURL = dataURL.replace('data:image/png;base64,', '')
+          var saveImageData = {
+              'type':'61',//协议Type值
+              'imageData':dataURL//保存图片的地址
+          }*/
+
+        html2canvas(document.getElementById("scimg"),{
+            useCORS:true, // 【重要】开启跨域配置
+            scale:window.devicePixelRatio < 3 ? window.devicePixelRatio : 2,
+            allowTaint: true, }// 允许跨域图片
+        ).then(function(canvas) {
+            var url=canvas.toDataURL('image/jpeg', 0.5);
+
+            var urlData={"name":url,"pname":pturl};
+            $.ajax({
+                type: "post",
+                url: "http://makeshows.cn:8989/view/add",
+                // url: "http://192.168.1.9/view/add",
+                dataType : "json",
+                contentType : "application/json",      //网上很多介绍加上此参数的，后来我发现不加入这个参数才会请求成功。
+                data: JSON.stringify(urlData),
+                success: function (d) {
+
+                    imgurl=d.data;
+                    console.log( imgurl);
+                    document.getElementById('bgk').src=imgurl;
+                }
+            });
+        });
+     //   document.getElementById('bgk').src=imgurl;
+        document.getElementById("xbtrip").style.display='block';
+        document.getElementById("xbtrip").style.width='26rem';
+        document.getElementById("xbtrip").src='/img/长按可保存图片.png';
+        document.getElementById("dy").style.display='block';
+        document.getElementById("dy").style.marginTop='63rem';
+        document.getElementById("rens").style.display='none';
+        document.getElementById("qcode").style.display='none';
+        document.getElementById("intx").style.display='none';
+        document.getElementById("tx").style.display='none';
+        document.getElementById("bg1").style.display='none';
+        document.getElementById("bg2").style.display='none';
+        document.getElementById("bg3").style.display='none';
+        document.getElementById("bg4").style.display='none';
+        document.getElementById("but1").style.display='none';
+        document.getElementById("but2").style.display='none';
+
+
+
+    }
+    function gxbg(value) {
+        if(value==1){
+            document.getElementById("bgk").src='/img/三级/背景/诚信.png';
+
+        }
+        if(value==2){
+            document.getElementById("bgk").src='/img/三级/背景/微笑.png';
+
+        }
+        if(value==3){
+            document.getElementById("bgk").src='/img/三级/背景/ESG.png';
+
+        }
+        if(value==4){
+            document.getElementById("bgk").src='/img/三级/背景/谦逊.png';
+
+        }
+    }
+    $(function(){
+        //
+        $("#btn").click(function(){
+
+
+            // 插入图片到htm
+
+
+            domtoimage.toJpeg(document.getElementById("test"), { quality: 0.9 })
+                .then(function (dataUrl) {
+                    //document.getElementById('test').src=dataUrl;
+                    //    var img = new Image();
+                    //     img.src = dataUrl;
+                    var urlData={"name":dataUrl,"panme":pturl};
+
+
+                    $.ajax({
+                        type: "post",
+                        url: "http://makeshows.cn:8989/view/add",
+                       // url: "http://127.0.0.1/view/add",
+                        dataType : "json",
+                        contentType : "application/json",      //网上很多介绍加上此参数的，后来我发现不加入这个参数才会请求成功。
+                        data: JSON.stringify(urlData),
+                        success: function (d) {
+                            console.log(d);
+                        }
+                    });
+                    console.log(dataUrl);
+                    //    document.body.appendChild(img);
+                });
+
+
+            // 下载png图片
+            //  domtoimage.toBlob(document.getElementById('table'))
+            //     .then(function (blob) {
+            //         window.saveAs(blob, 'my-node.png');
+            //     });
+
+
+            // 下载jpeg图片
+            // domtoimage.toJpeg(document.getElementById('my-node'), { quality: 0.95 })
+            //           .then(function (dataUrl) {
+            //               var link = document.createElement('a');
+            //               link.download = 'my-image-name.jpeg';
+            //               link.href = dataUrl;
+            //               link.click();
+            //           });
+
+            // var node = document.getElementById('table');
+            // domtoimage.toPixelData(node)
+            //     .then(function (pixels) {
+            //         for (var y = 0; y < node.scrollHeight; ++y) {
+            //           for (var x = 0; x < node.scrollWidth; ++x) {
+            //             pixelAtXYOffset = (4 * y * node.scrollHeight) + (4 * x);
+            //             /* pixelAtXY is a Uint8Array[4] containing RGBA values of the pixel at (x, y) in the range 0..255 */
+            //             pixelAtXY = pixels.slice(pixelAtXYOffset, pixelAtXYOffset + 4);
+            //           }
+            //         }
+        });
+
+    })
+    function imgClick(value) {
+        var name="trip"+value;
+        var name1="help"+value;
+        document.getElementById(name1).style.display='none';
+        document.getElementById(name).style.display='block';
+        if(value==5){
+            document.getElementById("jh").style.display='none';
+
+        }
+        if(value!=0&&flag[value-1]==0){
+            flag[value-1]=1;
+            count++;
+        }
+        if(count==8){
+            document.getElementById('jmk1').style.display='block';
+            document.getElementById('jmk2').style.display='block';
+
+        }
+    }
+    function xzman() {
+        var a1= document.getElementById("but1").value;
+
+        if(but1==0){
+            xb=1;
+            document.getElementById("ren").src=a[0];
+            document.getElementById("ren").style.display='block';
+            document.getElementById("but1").className="butman1";
+            document.getElementById("but1").style.marginTop="74rem";
+            document.getElementById("but1").style.marginLeft="23rem";
+            document.getElementById("but1").style.width="12rem";
+            document.getElementById("but2").style.width="14rem";
+            document.getElementById("but2").className="butw1";
+            document.getElementById("but2").style.marginTop="74rem";
+            document.getElementById("but2").style.marginLeft="41rem";
+            document.getElementById("frist").style.display='block';
+           // document.getElementById("two").style.display='block';
+            document.getElementById("xbtrip").style.display='none';
+            document.getElementById("xbtrip").style.width='0rem';
+            ps(1);
+            but1=1;
+            but2=1;
+        }
+        else if(but1==1){
+
+            xb=0;
+
+            document.getElementById("ren").style.display="none";
+            document.getElementById("but1").className="butman";
+            document.getElementById("but1").style.marginTop="-6rem";
+            document.getElementById("but1").style.marginLeft="23rem";
+            document.getElementById("but1").style.width="13rem";
+            document.getElementById("but2").style.width="14rem";
+            document.getElementById("but2").className="butw";
+            document.getElementById("but2").style.marginTop="36rem";
+            document.getElementById("but2").style.marginLeft="23rem";
+            document.getElementById("xbtrip").style.display='block';
+            document.getElementById("xbtrip").style.width='28rem';
+
+          /*  document.getElementById("1").style.display='block';
+            document.getElementById("2").style.display='block';
+            document.getElementById("3").style.display='block';
+            document.getElementById("4").style.display='block';
+            document.getElementById("5").style.display='block';*/
+            document.getElementById("two").style.display='none';
+            document.getElementById("frist").style.display='none';
+
+            document.getElementById("rtf").src='/img/二级/女/中 人物+装饰/1发型/11.png';
+            document.getElementById("ryf").src='/img/二级/女/中 人物+装饰/2上装/21.png';
+            document.getElementById("xz").src='/img/二级/女/中 人物+装饰/4鞋子/41.png';
+            document.getElementById("rxz").src='/img/二级/女/中 人物+装饰/3下装/31.png';
+            document.getElementById("ps").src='/img/二级/女/中 人物+装饰/5配饰/51.png';
+
+
+            document.getElementById("ren").style.width='30rem';
+            document.getElementById("ren").style.height='88rem';
+            document.getElementById("ren").style.marginLeft='0rem';
+            document.getElementById("d1").style.marginTop='-88rem';
+            document.getElementById("d1").style.marginLeft='0rem';
+            document.getElementById("rtf").style.width='30rem';
+            document.getElementById("d2").style.marginTop='-88rem';
+            document.getElementById("d2").style.marginLeft='0rem';
+            document.getElementById("ryf").style.width='30rem';
+
+            document.getElementById("d3").style.marginTop='-88rem';
+            document.getElementById("d3").style.marginLeft='0rem';
+            document.getElementById("xz").style.width='30rem';
+            document.getElementById("d4").style.marginTop='-88rem';
+            document.getElementById("d4").style.marginLeft='0rem';
+            document.getElementById("rxz").style.width='30rem';
+
+            document.getElementById("d5").style.marginTop='-88rem';
+            document.getElementById("d5").style.marginLeft='-0rem';
+            document.getElementById("ps").style.width='30rem';
+            document.getElementById("rtf").style.display='none';
+            document.getElementById("ryf").style.display='none';
+            document.getElementById("xz").style.display='none';
+            document.getElementById("rxz").style.display='none';
+            document.getElementById("ps").style.display='none';
+
+            dptype=0;
+            but1=0;
+            but2=0;
+
+
+        }else if(but1==2) {
+            ps(xb);
+            document.getElementById('bg1').style.width='0rem';
+            document.getElementById('bg2').style.width='0rem';
+            document.getElementById('bg3').style.width='0rem';
+            document.getElementById('bg4').style.width='0rem';
+            document.getElementById("two").style.display='none';
+            document.getElementById('tx').style.display='none';
+            document.getElementById('intx').style.display='none';
+            document.getElementById("1").style.display='block';
+            document.getElementById("2").style.display='block';
+            document.getElementById("3").style.display='block';
+            document.getElementById("4").style.display='block';
+            document.getElementById("5").style.display='block';
+            document.getElementById("but1").className="butman1";
+            document.getElementById("but2").className="butw1";
+            document.getElementById('bgk').style.display='none';
+            document.getElementById('scimg').style.width='0rem';
+            document.getElementById('scimg').style.height='84rem';
+            document.getElementById('scimg').style.marginLeft='-6rem';
+            //document.getElementById('scimg').style.position='absolute';
+            document.getElementById('scimg').style.marginTop='0rem';
+
+            document.getElementById('rens').style.transform='scale(1)';
+            document.getElementById('rens').style.marginLeft='19rem';
+            document.getElementById('rens').style.marginTop='-17rem';
+
+            document.getElementById("but1").style.marginTop='73rem';
+            document.getElementById("but2").style.marginTop='73rem';
+            document.getElementById("but1").className="butman1";
+            document.getElementById("but2").style.width="14rem";
+            document.getElementById('qcode').style.display='none';
+            dptype=0;
+            but2=1;
+            but1=1;
+        }else if(but1==3){
+            document.getElementById("1").style.display='block';
+            document.getElementById("2").style.display='block';
+            document.getElementById("3").style.display='block';
+            document.getElementById("4").style.display='block';
+            document.getElementById("5").style.display='block';
+            document.getElementById("two").style.display='none';
+
+
+            document.getElementById("tb").style.display='none';
+            document.getElementById("yb").style.display='none';
+            document.getElementById("kb").style.display='none';
+            document.getElementById("xb").style.display='none';
+            document.getElementById("jb").style.display='none';
+            but1=1;
+
+
+        }
+
+
+    }
+    function xzwom() {
+        var a1= document.getElementById("but2").value;
+
+        if(but2==0){
+            ps(2);
+            xb=2;
+            document.getElementById("ren").src=a[1];
+            document.getElementById("ren").style.display='block';
+            document.getElementById("but1").className="butman1";
+            document.getElementById("but2").className="butw1";
+
+            document.getElementById("but1").style.marginTop="74rem";
+            document.getElementById("but1").style.marginLeft="23rem";
+            document.getElementById("but1").style.width="12rem";
+            document.getElementById("but2").style.width="14rem";
+
+            document.getElementById("but2").style.marginTop="74rem";
+            document.getElementById("but2").style.marginLeft="41rem";
+            document.getElementById("frist").style.display='block';
+            // document.getElementById("two").style.display='block';
+            document.getElementById("xbtrip").style.display='none';
+            document.getElementById("xbtrip").style.width='0rem';
+            but2=1;
+            but1=1;
+            document.getElementById("rtf").src='/img/二级/女/中 人物+装饰/1发型/11.png';
+            document.getElementById("ryf").src='/img/二级/女/中 人物+装饰/2上装/21.png';
+            document.getElementById("xz").src='/img/二级/女/中 人物+装饰/4鞋子/41.png';
+            document.getElementById("rxz").src='/img/二级/女/中 人物+装饰/3下装/31.png';
+            document.getElementById("ps").src='/img/二级/女/中 人物+装饰/5配饰/51.png';
+
+
+            document.getElementById("ren").style.width='33rem';
+            document.getElementById("ren").style.marginLeft='-3rem';
+           // document.getElementById("ren").style.height='88rem';
+            document.getElementById("d1").style.marginTop='-89rem';
+            document.getElementById("d1").style.marginLeft='-3rem';
+            document.getElementById("rtf").style.width='33rem';
+            document.getElementById("d2").style.marginTop='-89rem';
+            document.getElementById("d2").style.marginLeft='-3rem';
+            document.getElementById("ryf").style.width='33rem';
+
+            document.getElementById("d3").style.marginTop='-89rem';
+            document.getElementById("d3").style.marginLeft='-3rem';
+            document.getElementById("xz").style.width='33rem';
+            document.getElementById("d4").style.marginTop='-89.5rem';
+            document.getElementById("d4").style.marginLeft='-2.99rem';
+            document.getElementById("rxz").style.width='33rem';
+
+            document.getElementById("d5").style.marginTop='-89rem';
+            document.getElementById("d5").style.marginLeft='-3rem';
+            document.getElementById("ps").style.width='33rem';
+
+        }
+
+        else if(but2==1){
+
+            document.getElementById('scimg').style.width='49rem';
+            document.getElementById('scimg').style.height='73rem';
+            document.getElementById('bg1').style.width='7rem';
+            document.getElementById('bg2').style.width='7rem';
+            document.getElementById('bg3').style.width='7rem';
+            document.getElementById('bg4').style.width='7rem';
+            // document.getElementById('scimg').style.height='73rem';
+            document.getElementById('scimg').style.marginLeft='-5rem';
+            //document.getElementById('scimg').style.position='absolute';
+            document.getElementById('scimg').style.marginTop='-14rem';
+            document.getElementById('bgk').style.display='block';
+            document.getElementById('tx').style.display='block';
+            document.getElementById('intx').style.display='block';
+            document.getElementById('rens').style.transform='scale(0.56)';
+            if(xb==1){
+                document.getElementById('rens').style.marginLeft='12rem';
+            }else {
+                document.getElementById('rens').style.marginLeft='15rem';
+            }
+
+            document.getElementById('rens').style.marginTop='4rem';
+            document.getElementById("1").style.display='none';
+            document.getElementById("2").style.display='none';
+            document.getElementById("3").style.display='none';
+            document.getElementById("4").style.display='none';
+            document.getElementById("5").style.display='none';
+            document.getElementById("two").style.display='none';
+            document.getElementById("but1").style.marginTop='83rem';
+            document.getElementById("but2").style.marginTop='83rem';
+            document.getElementById("but2").style.width='17rem';
+            document.getElementById("but2").className="butw2";
+            dptype=0;
+            but2=2;
+            but1=2;
+            var urlData={"name":"dataUrl"};
+            $.ajax({
+                type: "post",
+                url: "http://makeshows.cn:8989/view/add1",
+                // url: "http://192.168.1.9/view/add1",
+                dataType : "json",
+                contentType : "application/json",      //网上很多介绍加上此参数的，后来我发现不加入这个参数才会请求成功。
+                data: JSON.stringify(urlData),
+                success: function (d) {
+                    if(d){
+
+                        console.log(d);
+                        var a= d.data.split(',');
+                        qcurl=a[1];
+                        pturl=a[0];
+                    //    document.getElementById("qcode").src=qcurl;
+                    }
+
+                }
+            });
+            document.getElementById('qcode').style.display='block';
+        }
+        else if(but2==2){
+            saveimg();
+
+        }
+
+
+
+    }
+
+    function ps(value) {
+        if(value==1){
+            document.getElementById("yt").src=yjm[0];
+            document.getElementById("yy").src=yjm[1];
+            document.getElementById("yk").src=yjm[2];
+            document.getElementById("yx").src=yjm[3];
+            document.getElementById("yj").src=yjm[4];
+        }
+        else {
+
+            document.getElementById("yt").src=yjw[0];
+            document.getElementById("yy").src=yjw[1];
+            document.getElementById("yk").src=yjw[2];
+            document.getElementById("yx").src=yjw[3];
+            document.getElementById("yj").src=yjw[4];
+        }
+
+    }
+    function  fx(){
+        but1=3;
+        if(xb==1){
+            document.getElementById("1").style.display='none';
+            document.getElementById("2").style.display='none';
+            document.getElementById("3").style.display='none';
+            document.getElementById("4").style.display='none';
+            document.getElementById("5").style.display='none';
+            document.getElementById("two").style.display='block';
+
+            document.getElementById("21").src='/img/二级/男/左 按钮/0已选一级按钮/1.png';
+            document.getElementById("22").src='/img/二级/男/左 按钮/1发型/11.png';
+            document.getElementById("23").src='/img/二级/男/左 按钮/1发型/12.png';
+            document.getElementById("24").src='/img/二级/男/左 按钮/1发型/13.png';
+            document.getElementById("25").src='/img/二级/男/左 按钮/1发型/14.png';
+            document.getElementById("26").src='/img/二级/男/左 按钮/1发型/15.png';
+
+            document.getElementById("tb").style.display='none';
+            document.getElementById("yb").style.display='none';
+            document.getElementById("kb").style.display='none';
+            document.getElementById("xb").style.display='none';
+            document.getElementById("jb").style.display='none';
+
+        }
+        if (xb==2){
+
+
+
+            document.getElementById("1").style.display='none';
+            document.getElementById("2").style.display='none';
+            document.getElementById("3").style.display='none';
+            document.getElementById("4").style.display='none';
+            document.getElementById("5").style.display='none';
+            document.getElementById("two").style.display='block';
+
+            document.getElementById("21").src='/img/二级/女/左 按钮/0已选一级按钮/1.png';
+            document.getElementById("22").src='/img/二级/女/左 按钮/1发型/11.png';
+            document.getElementById("23").src='/img/二级/女/左 按钮/1发型/12.png';
+            document.getElementById("24").src='/img/二级/女/左 按钮/1发型/13.png';
+            document.getElementById("25").src='/img/二级/女/左 按钮/1发型/14.png';
+            document.getElementById("26").src='/img/二级/女/左 按钮/1发型/15.png';
+
+            document.getElementById("tb").style.display='none';
+            document.getElementById("yb").style.display='none';
+            document.getElementById("kb").style.display='none';
+            document.getElementById("xb").style.display='none';
+            document.getElementById("jb").style.display='none';
+
+        }
+        dptype=1;
+    }
+    function yf() {
+        but1=3;
+        if(xb==1){
+            document.getElementById("1").style.display='none';
+            document.getElementById("2").style.display='none';
+            document.getElementById("3").style.display='none';
+            document.getElementById("4").style.display='none';
+            document.getElementById("5").style.display='none';
+            document.getElementById("two").style.display='block';
+
+            document.getElementById("21").src='/img/二级/男/左 按钮/0已选一级按钮/2.png';
+            document.getElementById("22").src='/img/二级/男/左 按钮/2上衣/21.png';
+            document.getElementById("23").src='/img/二级/男/左 按钮/2上衣/22.png';
+            document.getElementById("24").src='/img/二级/男/左 按钮/2上衣/23.png';
+            document.getElementById("25").src='/img/二级/男/左 按钮/2上衣/24.png';
+            document.getElementById("26").src='/img/二级/男/左 按钮/2上衣/25.png';
+
+            document.getElementById("tb").style.display='none';
+            document.getElementById("yb").style.display='none';
+            document.getElementById("kb").style.display='none';
+            document.getElementById("xb").style.display='none';
+            document.getElementById("jb").style.display='none';
+
+        }
+        if (xb==2){
+            document.getElementById("1").style.display='none';
+            document.getElementById("2").style.display='none';
+            document.getElementById("3").style.display='none';
+            document.getElementById("4").style.display='none';
+            document.getElementById("5").style.display='none';
+            document.getElementById("two").style.display='block';
+
+            document.getElementById("21").src='/img/二级/女/左 按钮/0已选一级按钮/2.png';
+            document.getElementById("22").src='/img/二级/女/左 按钮/2上衣/21.png';
+            document.getElementById("23").src='/img/二级/女/左 按钮/2上衣/22.png';
+            document.getElementById("24").src='/img/二级/女/左 按钮/2上衣/23.png';
+            document.getElementById("25").src='/img/二级/女/左 按钮/2上衣/24.png';
+            document.getElementById("26").src='/img/二级/女/左 按钮/2上衣/25.png';
+
+            document.getElementById("tb").style.display='none';
+            document.getElementById("yb").style.display='none';
+            document.getElementById("kb").style.display='none';
+            document.getElementById("xb").style.display='none';
+            document.getElementById("jb").style.display='none';
+
+        }
+        dptype=2;
+    }
+    function kz() {
+        but1=3;
+        if(xb==1){
+            document.getElementById("1").style.display='none';
+            document.getElementById("2").style.display='none';
+            document.getElementById("3").style.display='none';
+            document.getElementById("4").style.display='none';
+            document.getElementById("5").style.display='none';
+            document.getElementById("two").style.display='block';
+
+            document.getElementById("21").src='/img/二级/男/左 按钮/0已选一级按钮/3.png';
+            document.getElementById("22").src='/img/二级/男/左 按钮/3下装/31.png';
+            document.getElementById("23").src='/img/二级/男/左 按钮/3下装/32.png';
+            document.getElementById("24").src='/img/二级/男/左 按钮/3下装/33.png';
+            document.getElementById("25").src='/img/二级/男/左 按钮/3下装/34.png';
+            document.getElementById("26").src='/img/二级/男/左 按钮/3下装/35.png';
+
+            document.getElementById("tb").style.display='none';
+            document.getElementById("yb").style.display='none';
+            document.getElementById("kb").style.display='none';
+            document.getElementById("xb").style.display='none';
+            document.getElementById("jb").style.display='none';
+
+        }
+        if (xb==2){
+            but1=3;
+            document.getElementById("1").style.display='none';
+            document.getElementById("2").style.display='none';
+            document.getElementById("3").style.display='none';
+            document.getElementById("4").style.display='none';
+            document.getElementById("5").style.display='none';
+            document.getElementById("two").style.display='block';
+
+            document.getElementById("21").src='/img/二级/女/左 按钮/0已选一级按钮/3.png';
+            document.getElementById("22").src='/img/二级/女/左 按钮/3下装/31.png';
+            document.getElementById("23").src='/img/二级/女/左 按钮/3下装/32.png';
+            document.getElementById("24").src='/img/二级/女/左 按钮/3下装/33.png';
+            document.getElementById("25").src='/img/二级/女/左 按钮/3下装/34.png';
+            document.getElementById("26").src='/img/二级/女/左 按钮/3下装/35.png';
+
+            document.getElementById("tb").style.display='none';
+            document.getElementById("yb").style.display='none';
+            document.getElementById("kb").style.display='none';
+            document.getElementById("xb").style.display='none';
+            document.getElementById("jb").style.display='none';
+
+        }
+        dptype=3;
+    }
+    function xz() {
+        but1=3;
+        if(xb==1){
+            document.getElementById("1").style.display='none';
+            document.getElementById("2").style.display='none';
+            document.getElementById("3").style.display='none';
+            document.getElementById("4").style.display='none';
+            document.getElementById("5").style.display='none';
+            document.getElementById("two").style.display='block';
+
+            document.getElementById("21").src='/img/二级/男/左 按钮/0已选一级按钮/4.png';
+            document.getElementById("22").src='/img/二级/男/左 按钮/4鞋子/41.png';
+            document.getElementById("23").src='/img/二级/男/左 按钮/4鞋子/42.png';
+            document.getElementById("24").src='/img/二级/男/左 按钮/4鞋子/43.png';
+            document.getElementById("25").src='/img/二级/男/左 按钮/4鞋子/44.png';
+            document.getElementById("26").src='/img/二级/男/左 按钮/4鞋子/45.png';
+
+            document.getElementById("tb").style.display='none';
+            document.getElementById("yb").style.display='none';
+            document.getElementById("kb").style.display='none';
+            document.getElementById("xb").style.display='none';
+            document.getElementById("jb").style.display='none';
+
+        }
+        if (xb==2){
+            document.getElementById("1").style.display='none';
+            document.getElementById("2").style.display='none';
+            document.getElementById("3").style.display='none';
+            document.getElementById("4").style.display='none';
+            document.getElementById("5").style.display='none';
+            document.getElementById("two").style.display='block';
+
+            document.getElementById("21").src='/img/二级/女/左 按钮/0已选一级按钮/4.png';
+            document.getElementById("22").src='/img/二级/女/左 按钮/4鞋子/41.png';
+            document.getElementById("23").src='/img/二级/女/左 按钮/4鞋子/42.png';
+            document.getElementById("24").src='/img/二级/女/左 按钮/4鞋子/43.png';
+            document.getElementById("25").src='/img/二级/女/左 按钮/4鞋子/44.png';
+            document.getElementById("26").src='/img/二级/女/左 按钮/4鞋子/45.png';
+
+            document.getElementById("tb").style.display='none';
+            document.getElementById("yb").style.display='none';
+            document.getElementById("kb").style.display='none';
+            document.getElementById("xb").style.display='none';
+            document.getElementById("jb").style.display='none';
+
+        }
+        dptype=4;
+    }
+    function peis() {
+        but1=3;
+        if(xb==1){
+            document.getElementById("1").style.display='none';
+            document.getElementById("2").style.display='none';
+            document.getElementById("3").style.display='none';
+            document.getElementById("4").style.display='none';
+            document.getElementById("5").style.display='none';
+            document.getElementById("two").style.display='block';
+
+            document.getElementById("21").src='/img/二级/男/左 按钮/0已选一级按钮/5.png';
+            document.getElementById("22").src='/img/二级/男/左 按钮/5配饰/51.png';
+            document.getElementById("23").src='/img/二级/男/左 按钮/5配饰/52.png';
+            document.getElementById("24").src='/img/二级/男/左 按钮/5配饰/53.png';
+            document.getElementById("25").src='/img/二级/男/左 按钮/5配饰/54.png';
+            document.getElementById("26").src='/img/二级/男/左 按钮/5配饰/55.png';
+
+            document.getElementById("tb").style.display='none';
+            document.getElementById("yb").style.display='none';
+            document.getElementById("kb").style.display='none';
+            document.getElementById("xb").style.display='none';
+            document.getElementById("jb").style.display='none';
+
+        }
+        if (xb==2){
+            document.getElementById("1").style.display='none';
+            document.getElementById("2").style.display='none';
+            document.getElementById("3").style.display='none';
+            document.getElementById("4").style.display='none';
+            document.getElementById("5").style.display='none';
+            document.getElementById("two").style.display='block';
+
+            document.getElementById("21").src='/img/二级/女/左 按钮/0已选一级按钮/3.png';
+            document.getElementById("22").src='/img/二级/女/左 按钮/5配饰/51.png';
+            document.getElementById("23").src='/img/二级/女/左 按钮/5配饰/52.png';
+            document.getElementById("24").src='/img/二级/女/左 按钮/5配饰/53.png';
+            document.getElementById("25").src='/img/二级/女/左 按钮/5配饰/54.png';
+            document.getElementById("26").src='/img/二级/女/左 按钮/5配饰/55.png';
+
+            document.getElementById("tb").style.display='none';
+            document.getElementById("yb").style.display='none';
+            document.getElementById("kb").style.display='none';
+            document.getElementById("xb").style.display='none';
+            document.getElementById("jb").style.display='none';
+
+        }
+        dptype=5;
+    }
+    function fx1() {
+        document.getElementById("tb").style.display='none';
+        document.getElementById("yb").style.display='none';
+        document.getElementById("kb").style.display='none';
+        document.getElementById("xb").style.display='none';
+        document.getElementById("jb").style.display='none';
+        document.getElementById("tb").style.display='block';
+        document.getElementById("tb").src='/img/二级/03.png';
+        if(xb==1){
+            if(dptype==1){
+
+
+                document.getElementById("rtf").style.display='block'
+                document.getElementById("rtf").src='/img/二级/男/中 人物+装饰/1发型/11.png';
+
+            }else if(dptype==2){
+                document.getElementById("ryf").style.display='block'
+                document.getElementById("ryf").src='/img/二级/男/中 人物+装饰/2上装/21.png';
+
+
+            }
+            else if(dptype==3){
+                document.getElementById("rxz").style.display='block'
+                document.getElementById("rxz").src='/img/二级/男/中 人物+装饰/3下装/31.png';
+
+            }
+            else if(dptype==4){
+                document.getElementById("xz").style.display='block'
+                document.getElementById("xz").src='/img/二级/男/中 人物+装饰/4鞋子/41.png';
+
+            }
+            else if(dptype==5){
+                document.getElementById("ps").style.display='block'
+                document.getElementById("ps").src='/img/二级/男/中 人物+装饰/5配饰/51.png';
+
+            }
+
+        }
+        if(xb==2){
+            if(dptype==1){
+
+                document.getElementById("rtf").style.display='block'
+                document.getElementById("rtf").src='/img/二级/女/中 人物+装饰/1发型/11.png';
+
+            }else if(dptype==2){
+                document.getElementById("ryf").style.display='block'
+                document.getElementById("ryf").src='/img/二级/女/中 人物+装饰/2上装/21.png';
+
+            }
+            else if(dptype==3){
+                document.getElementById("rxz").style.display='block'
+                document.getElementById("rxz").src='/img/二级/女/中 人物+装饰/3下装/31.png';
+
+            }
+            else if(dptype==4){
+                document.getElementById("xz").style.display='block'
+                document.getElementById("xz").src='/img/二级/女/中 人物+装饰/4鞋子/41.png';
+
+            }
+            else if(dptype==5){
+                document.getElementById("ps").style.display='block'
+                document.getElementById("ps").src='/img/二级/女/中 人物+装饰/5配饰/51.png';
+
+            }
+
+        }
+
+
+    }
+    function fx2() {
+        document.getElementById("tb").style.display='none';
+        document.getElementById("yb").style.display='none';
+        document.getElementById("kb").style.display='none';
+        document.getElementById("xb").style.display='none';
+        document.getElementById("jb").style.display='none';
+        document.getElementById("yb").style.display='block';
+        document.getElementById("yb").src='/img/二级/03.png';
+        if(xb==1){
+            if(dptype==1){
+
+                document.getElementById("rtf").style.display='block'
+                document.getElementById("rtf").src='/img/二级/男/中 人物+装饰/1发型/12.png';
+
+            }else if(dptype==2){
+                document.getElementById("ryf").style.display='block'
+                document.getElementById("ryf").src='/img/二级/男/中 人物+装饰/2上装/22.png';
+
+            }
+            else if(dptype==3){
+                document.getElementById("rxz").style.display='block'
+                document.getElementById("rxz").src='/img/二级/男/中 人物+装饰/3下装/32.png';
+
+            }
+            else if(dptype==4){
+                document.getElementById("xz").style.display='block'
+                document.getElementById("xz").src='/img/二级/男/中 人物+装饰/4鞋子/42.png';
+
+            }
+            else if(dptype==5){
+                document.getElementById("ps").style.display='block'
+                document.getElementById("ps").src='/img/二级/男/中 人物+装饰/5配饰/52.png';
+
+            }
+
+        }
+        if(xb==2){
+            if(dptype==1){
+
+                document.getElementById("rtf").style.display='block'
+                document.getElementById("rtf").src='/img/二级/女/中 人物+装饰/1发型/12.png';
+
+            }else if(dptype==2){
+                document.getElementById("ryf").style.display='block'
+                document.getElementById("ryf").src='/img/二级/女/中 人物+装饰/2上装/22.png';
+
+            }
+            else if(dptype==3){
+                document.getElementById("rxz").style.display='block'
+                document.getElementById("rxz").src='/img/二级/女/中 人物+装饰/3下装/32.png';
+
+            }
+            else if(dptype==4){
+                document.getElementById("xz").style.display='block'
+                document.getElementById("xz").src='/img/二级/女/中 人物+装饰/4鞋子/42.png';
+
+            }
+            else if(dptype==5){
+                document.getElementById("ps").style.display='block'
+                document.getElementById("ps").src='/img/二级/女/中 人物+装饰/5配饰/52.png';
+
+            }
+
+        }
+
+    }
+    function fx3() {
+        document.getElementById("tb").style.display='none';
+        document.getElementById("yb").style.display='none';
+        document.getElementById("kb").style.display='none';
+        document.getElementById("xb").style.display='none';
+        document.getElementById("jb").style.display='none';
+        document.getElementById("kb").style.display='block';
+        document.getElementById("kb").src='/img/二级/03.png';
+        if(xb==1){
+            if(dptype==1){
+
+                document.getElementById("rtf").style.display='block'
+                document.getElementById("rtf").src='/img/二级/男/中 人物+装饰/1发型/13.png';
+
+            }else if(dptype==2){
+                document.getElementById("ryf").style.display='block'
+                document.getElementById("ryf").src='/img/二级/男/中 人物+装饰/2上装/23.png';
+
+            }
+            else if(dptype==3){
+                document.getElementById("rxz").style.display='block'
+                document.getElementById("rxz").src='/img/二级/男/中 人物+装饰/3下装/33.png';
+
+            }
+            else if(dptype==4){
+                document.getElementById("xz").style.display='block'
+                document.getElementById("xz").src='/img/二级/男/中 人物+装饰/4鞋子/43.png';
+
+            }
+            else if(dptype==5){
+                document.getElementById("ps").style.display='block'
+                document.getElementById("ps").src='/img/二级/男/中 人物+装饰/5配饰/53.png';
+
+            }
+
+        }
+        if(xb==2){
+            if(dptype==1){
+
+                document.getElementById("rtf").style.display='block'
+                document.getElementById("rtf").src='/img/二级/女/中 人物+装饰/1发型/13.png';
+
+            }else if(dptype==2){
+                document.getElementById("ryf").style.display='block'
+                document.getElementById("ryf").src='/img/二级/女/中 人物+装饰/2上装/23.png';
+
+            }
+            else if(dptype==3){
+                document.getElementById("rxz").style.display='block'
+                document.getElementById("rxz").src='/img/二级/女/中 人物+装饰/3下装/33.png';
+
+            }
+            else if(dptype==4){
+                document.getElementById("xz").style.display='block'
+                document.getElementById("xz").src='/img/二级/女/中 人物+装饰/4鞋子/43.png';
+
+            }
+            else if(dptype==5){
+                document.getElementById("ps").style.display='block'
+                document.getElementById("ps").src='/img/二级/女/中 人物+装饰/5配饰/53.png';
+
+            }
+
+        }
+
+    }
+    function fx4() {
+        document.getElementById("tb").style.display='none';
+        document.getElementById("yb").style.display='none';
+        document.getElementById("kb").style.display='none';
+        document.getElementById("xb").style.display='none';
+        document.getElementById("jb").style.display='none';
+        document.getElementById("xb").style.display='block';
+        document.getElementById("xb").src='/img/二级/03.png';
+        if(xb==1){
+            if(dptype==1){
+
+                document.getElementById("rtf").style.display='block'
+                document.getElementById("rtf").src='/img/二级/男/中 人物+装饰/1发型/14.png';
+
+            }else if(dptype==2){
+                document.getElementById("ryf").style.display='block'
+                document.getElementById("ryf").src='/img/二级/男/中 人物+装饰/2上装/24.png';
+
+            }
+            else if(dptype==3){
+                document.getElementById("rxz").style.display='block'
+                document.getElementById("rxz").src='/img/二级/男/中 人物+装饰/3下装/34.png';
+
+            }
+            else if(dptype==4){
+                document.getElementById("xz").style.display='block'
+                document.getElementById("xz").src='/img/二级/男/中 人物+装饰/4鞋子/44.png';
+
+            }
+            else if(dptype==5){
+                document.getElementById("ps").style.display='block'
+                document.getElementById("ps").src='/img/二级/男/中 人物+装饰/5配饰/54.png';
+
+            }
+
+        }
+        if(xb==2){
+            if(dptype==1){
+
+                document.getElementById("rtf").style.display='block'
+                document.getElementById("rtf").src='/img/二级/女/中 人物+装饰/1发型/14.png';
+
+            }else if(dptype==2){
+                document.getElementById("ryf").style.display='block'
+                document.getElementById("ryf").src='/img/二级/女/中 人物+装饰/2上装/24.png';
+
+            }
+            else if(dptype==3){
+                document.getElementById("rxz").style.display='block'
+                document.getElementById("rxz").src='/img/二级/女/中 人物+装饰/3下装/34.png';
+
+            }
+            else if(dptype==4){
+                document.getElementById("xz").style.display='block'
+                document.getElementById("xz").src='/img/二级/女/中 人物+装饰/4鞋子/44.png';
+
+            }
+            else if(dptype==5){
+                document.getElementById("ps").style.display='block'
+                document.getElementById("ps").src='/img/二级/女/中 人物+装饰/5配饰/54.png';
+
+            }
+
+        }
+
+    }
+    function fx5() {
+        document.getElementById("tb").style.display='none';
+        document.getElementById("yb").style.display='none';
+        document.getElementById("kb").style.display='none';
+        document.getElementById("xb").style.display='none';
+        document.getElementById("jb").style.display='none';
+        document.getElementById("jb").style.display='block';
+        document.getElementById("jb").src='/img/二级/03.png';
+        if(xb==1){
+            if(dptype==1){
+
+                document.getElementById("rtf").style.display='block'
+                document.getElementById("rtf").src='/img/二级/男/中 人物+装饰/1发型/15.png';
+
+            }else if(dptype==2){
+                document.getElementById("ryf").style.display='block'
+                document.getElementById("ryf").src='/img/二级/男/中 人物+装饰/2上装/25.png';
+
+            }
+            else if(dptype==3){
+                document.getElementById("rxz").style.display='block'
+                document.getElementById("rxz").src='/img/二级/男/中 人物+装饰/3下装/35.png';
+
+            }
+            else if(dptype==4){
+                document.getElementById("xz").style.display='block'
+                document.getElementById("xz").src='/img/二级/男/中 人物+装饰/4鞋子/45.png';
+
+            }
+            else if(dptype==5){
+                document.getElementById("ps").style.display='block'
+                document.getElementById("ps").src='/img/二级/男/中 人物+装饰/5配饰/55.png';
+
+            }
+
+        }
+        if(xb==2){
+            if(dptype==1){
+
+                document.getElementById("rtf").style.display='block'
+                document.getElementById("rtf").src='/img/二级/女/中 人物+装饰/1发型/15.png';
+
+            }else if(dptype==2){
+                document.getElementById("ryf").style.display='block'
+                document.getElementById("ryf").src='/img/二级/女/中 人物+装饰/2上装/25.png';
+
+            }
+            else if(dptype==3){
+                document.getElementById("rxz").style.display='block'
+                document.getElementById("rxz").src='/img/二级/女/中 人物+装饰/3下装/35.png';
+
+            }
+            else if(dptype==4){
+                document.getElementById("xz").style.display='block'
+                document.getElementById("xz").src='/img/二级/女/中 人物+装饰/4鞋子/45.png';
+
+            }
+            else if(dptype==5){
+                document.getElementById("ps").style.display='block'
+                document.getElementById("ps").src='/img/二级/女/中 人物+装饰/5配饰/55.png';
+
+            }
+
+        }
+    }
+
+
+
+
+</script>
+
+</html>

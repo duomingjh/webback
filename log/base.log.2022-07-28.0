@@ -1,0 +1,130 @@
+2022-07-28 09:22:41,985 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 16624 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 09:22:41,988 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 09:22:41,988 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 09:22:43,877 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 2.421 seconds (JVM running for 3.363)
+2022-07-28 09:22:59,440 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 09:22:59,706 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 09:22:59,734 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-07-28 09:23:06,588 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 09:23:06,588 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 09:23:06,589 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-07-28 09:23:57,634 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 17412 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 09:23:57,637 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 09:23:57,637 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 09:23:58,832 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.449 seconds (JVM running for 2.002)
+2022-07-28 09:24:00,088 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 09:24:00,103 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 09:24:00,117 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-07-28 09:24:04,233 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 09:24:04,234 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 09:24:04,235 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-07-28 09:24:12,138 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 09:24:12,138 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 09:24:12,140 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-07-28 09:48:09,677 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 19056 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 09:48:09,678 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 09:48:09,679 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 09:52:21,563 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 11420 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 09:52:21,565 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 09:52:21,566 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 09:52:22,820 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.508 seconds (JVM running for 2.037)
+2022-07-28 09:53:00,212 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into tb_user(date,count,count1) values (?,?,?) 
+2022-07-28 09:53:00,227 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1658973180002(String), 100(Integer), 100(Integer)
+2022-07-28 09:53:50,467 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 8024 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 09:53:50,469 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 09:53:50,470 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 09:53:51,645 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.436 seconds (JVM running for 1.961)
+2022-07-28 09:54:00,217 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into Persons(date,count,count1) values (?,?,?) 
+2022-07-28 09:54:00,231 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1658973240006(String), 100(Integer), 100(Integer)
+2022-07-28 09:54:00,243 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-07-28 10:00:58,202 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 12724 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 10:00:58,204 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 10:00:58,204 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 10:00:59,388 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.421 seconds (JVM running for 1.911)
+2022-07-28 10:01:00,225 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into Persons(date,count,count1) values (?,?,?) 
+2022-07-28 10:01:00,240 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年07月28日(String), 0(Integer), 0(Integer)
+2022-07-28 10:01:00,365 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-07-28 10:08:04,642 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 19812 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 10:08:04,644 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 10:08:04,644 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 10:08:05,863 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.469 seconds (JVM running for 1.996)
+2022-07-28 10:08:14,130 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:08:14,144 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:08:14,157 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2022-07-28 10:08:46,321 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 12112 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 10:08:46,323 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 10:08:46,323 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 10:08:47,557 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.486 seconds (JVM running for 2.021)
+2022-07-28 10:08:47,821 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:08:47,836 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:08:47,849 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2022-07-28 10:11:28,846 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 14348 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 10:11:28,848 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 10:11:28,848 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 10:11:30,101 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.505 seconds (JVM running for 2.034)
+2022-07-28 10:11:30,544 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:11:30,559 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:11:30,573 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2022-07-28 10:17:56,009 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 17028 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 10:17:56,011 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 10:17:56,011 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 10:17:57,290 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.533 seconds (JVM running for 2.049)
+2022-07-28 10:17:59,451 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:17:59,466 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:17:59,479 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2022-07-28 10:18:00,013 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into Persons(date,count,count1) values (?,?,?) 
+2022-07-28 10:18:00,015 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年07月28日(String), 0(Integer), 0(Integer)
+2022-07-28 10:18:00,026 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-07-28 10:18:02,658 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:18:02,659 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:18:02,662 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2022-07-28 10:18:14,337 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 13696 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 10:18:14,340 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 10:18:14,340 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 10:18:15,616 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.513 seconds (JVM running for 2.033)
+2022-07-28 10:18:17,239 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:18:17,252 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:18:17,266 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2022-07-28 10:18:50,344 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 19032 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 10:18:50,346 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 10:18:50,347 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 10:18:51,607 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.511 seconds (JVM running for 2.017)
+2022-07-28 10:18:51,890 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:18:51,904 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:18:51,918 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2022-07-28 10:18:54,242 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:18:54,242 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:18:54,244 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2022-07-28 10:18:56,762 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:18:56,762 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:18:56,764 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2022-07-28 10:18:59,903 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:18:59,903 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:18:59,905 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2022-07-28 10:19:00,017 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into Persons(date,count,count1) values (?,?,?) 
+2022-07-28 10:19:00,017 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年07月28日(String), 0(Integer), 0(Integer)
+2022-07-28 10:19:00,029 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-07-28 10:19:04,972 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:19:04,973 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:19:04,975 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2022-07-28 10:19:07,188 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 10:19:07,188 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 10:19:07,189 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2022-07-28 10:21:26,864 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 20732 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 10:21:26,865 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 10:21:26,866 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 10:21:28,099 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.494 seconds (JVM running for 1.983)
+2022-07-28 10:43:30,261 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 7448 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 10:43:30,263 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 10:43:30,263 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 10:43:31,543 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.54 seconds (JVM running for 2.105)
+2022-07-28 10:44:44,335 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 20500 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-07-28 10:44:44,338 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-07-28 10:44:44,338 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-07-28 10:44:45,581 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.603 seconds (JVM running for 2.434)
+2022-07-28 11:35:01,605 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 11:35:01,622 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 11:35:01,638 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2022-07-28 11:35:04,108 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from persons 
+2022-07-28 11:35:04,109 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2022-07-28 11:35:04,110 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>幸福小镇</title>
+</head>
+<style>
+    .videoContent{
+        overflow: hidden;
+        background-size:cover;
+        -webkit-background-size: cover;
+
+        position: absolute;
+        display: none;
+    }
+    .videoElement{
+        object-fit:fill;
+        width: 62rem;
+        height: 125rem;
+    }
+
+    body,html{
+        margin: 0px;
+        background: url("/img/背景.png");
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-size:cover;
+        -webkit-background-size: cover;
+        height: 100%;
+    }
+    .butbg{
+        background: url("/img/入住幸福小镇.png");
+        width: 10rem;
+        height: 26rem;
+        background-repeat: no-repeat;
+        background-size: 10rem;
+        margin-left: 24rem;
+        margin-top: 48rem;
+        border: none;
+
+    }
+    @keyframes xing {
+        0% {
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(0.9);
+        }
+        50% {
+            transform: scale(1);
+        }
+        75% {
+            transform: scale(0.9);
+        }
+    }
+    .my_xing {
+        -webkit-animation-name: xing;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 6s;
+    }
+</style>
+<body>
+
+<img src="/img/幸福小镇.gif" style="position: absolute;height: 122rem;width: 62rem">
+<img onclick="tg()" src="/img/跳过.png" style="position: absolute;width: 10rem;margin-left: 45rem;margin-top: 6rem">
+
+</body>
+
+<script>
+    var w=window.screen.width;
+    var h=window.screen.height;
+
+    setTimeout(function(){
+        location.href="http://makeshows.cn:8989/view/zdf";
+
+        },10000);
+    function p() {
+        document.getElementById('but').style.display='none';
+        var video = document.getElementById('video');
+       video.play();
+    }
+    var elevideo = document.getElementById("video");
+    elevideo.addEventListener('ended', function () { //结束
+        location.href="http://makeshows.cn:8989/view/zdf";
+        //location.href="http://127.0.0.1/view/zdf";
+
+    }, false);
+    function tg() {
+        location.href="http://makeshows.cn:8989/view/zdf";
+    }
+</script>
+</html>

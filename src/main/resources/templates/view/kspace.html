@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >实验动物三维轨迹记录和分析软件</title>
+    <link href="/kspace/icon.jpg" rel="shortcut icon" type="image/x-ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script type="text/javascript" th:src="@{/saveimg/jquery.min.js}"></script>
+</head>
+<style >
+    body {
+
+        margin: 0px;
+        background: url("/kspace/首页.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-size:cover;
+        -webkit-background-size: cover;
+        height: 100%;
+        padding: 0;
+    }
+
+    .box {
+        margin-left: 30%;
+    }
+    .but{
+        position: absolute;
+
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        wx.config({
+
+            debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+
+            appId: '[[${appid}]]', // 必填，公众号的唯一标识
+
+            timestamp: '[[${timestamp}]]', // 必填，生成签名的时间戳
+
+            nonceStr: '[[${nonceStr}]]', // 必填，生成签名的随机串
+
+            signature: '[[${signature}]]',// 必填，签名
+
+            jsApiList: [
+
+
+                'updateAppMessageShareData',  //分享给朋友
+
+            ] // 必填，需要使用的JS接口列表
+
+        });
+
+
+        wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
+            wx.updateAppMessageShareData({
+                title: "KSpace实验动物三维轨迹记录和分析软件", // 分享标题
+                desc: "介绍和操作文档", // 分享描述
+                link: "https://makeshows.top/kspace/index", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+
+                imgUrl:"https://makeshows.top/myFile/logo300.jpg", // 分享图标
+
+                success: function () {
+                    console.log("success");// 设置成功
+                }
+            });
+
+        });
+
+
+
+
+        wx.error(function (res) {
+            alert("error: "+ res.errMsg);
+        });
+
+    });
+
+</script>
+<body>
+
+
+
+    <button   class="but" id="but1" onclick="but1(1)" style="width: 40%;top: 18.5rem;height: 7%;left: 30%;opacity: 0%">产品介绍</button>
+    <button class="but" id="but2" onclick="but1(2)" style="height: 7%;width: 40%;top: 22.5rem;left: 30%;opacity: 0%">产品优势</button>
+    <button class="but" id="but3" onclick="but1(3)" style="height: 7%;width: 40%;top: 26.5rem;left: 30%;opacity: 0%">操作视频</button>
+    <button class="but" id="but4" onclick="but1(4)" style="height: 7%;width: 40%;top: 30.5rem;left: 30%;opacity: 0%">操作文档</button>
+    <button class="but" id="but5" onclick="but1(5)" style="height: 7%;width: 40%;top: 34.5rem;left: 30%;opacity: 0%">常见问题</button>
+
+
+</body>
+<script>
+
+
+  function  but1(value){
+        if(value=="1"){
+
+            window.location.href="http://makeshows.top/kspace/jz";
+        }else  if(value=="2"){
+            window.location.href="http://makeshows.top/kspace/cpys";
+
+        }
+       if(value=="3"){
+
+
+           window.location.href="http://makeshows.top/kspace/video";
+       }else if(value=="4") {
+           window.location.href = "http://makeshows.top/kspace/viewer?value=实验动物三维轨迹软件操作手册.pdf";
+
+       }else  if(value=="5"){
+           window.location.href="http://makeshows.top/kspace/cjwt";
+
+       }
+    }
+</script>
+</html>

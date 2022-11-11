@@ -1,11 +1,35 @@
 server:
-  port: 1112
+  port: 443
+  ssl:
+    key-password: 970911
+    key-store: classpath:makeshows.jks
+    key-store-type: JKS
 
+
+alipay:
+  #应用ID
+  app_id: 2021003130699389
+  #应用私钥
+  merchant_private_key: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1bVhtQuwAHUIBKCg+4+1U2BNeLWYMSwVmdADXfpNLWajcT0RAtyw8L/K71NYHAkoTvLKMQhnhvtcTftr0sFtXb7/N0n68oZUtPYbhpL777mwRfum2YCDGB44kGJIJP9yr03rCrWJrPiAv6MhC2/oIPWOGEGQSBq+oG2BIFDLo8BrVvTdSDYfg9UYqVT0QtH55wTL9ntgtGG+oC5vRK8WrLGPklsYoQTngSUCuKbgsD3e8fDTsxUTLPN5/2JXZRCI/3usp3OMdbdSNlZ/1y6GnxwScRKPMDCImNHMXYxeiZj8f93P3YYpZ+D6AL2oT6r6++x4vmWBk8ys2uzzPHfTrAgMBAAECggEBALKF7kVVXLSgFZrd0PxRe+/IzwYU1h2ylJXEADAMNRQoHajrttWXaMewxsFdJV2wOwRA4dByGtWv3CMq6HluL/NR2wLE5kDnHstth5PxcJymd2Cf6Ymz/YvfU1bhdpHzbUkGx/1Yb0fn0fRSsvxXSSliftQkvNOgEKjyh0Nl3NKoCB9/+eVias6CPY6l9Npi+xYI0q9e2+ERxr2v6FIsk/lepjXDtpBi8/3QLsmMwVU6o7JTpJ7VhZ/bP9Ycw5xPx98/1SmHEgJR7rQ0UDpDcEjslu/s/WQ/Q5WPeK+KnoGy52jdElPHGAHvBsLFo1ZLPhgLt317lCuUhzskjgeQhYECgYEA5spq5cc30riSu/zs61NU9tRWiXEJ15WVoui3rDQ/Wru26CuqdkHxuRQpx0YGS0wF5aiXhk6QAy2fhKjGCB5NCHKacUbnSzQSdhfVhULgmBA7U8VIMW8+kKgHBRBq7ZGV3O23eqJnxKVw01HcVL/UjXqGDegeo42CCnn8RBvMMEMCgYEAyT6UDT3eUDIldAnjZhhcLG7//B5obuMammGt6fOqn3By6Z5lzOn9Cth974HhQyMwgIcU5QqGiegtuSv5hYhUa6VJGGJzRuRKsSovv04zDdypxBlQC0WJq7Spa10NQmADMRVtgIWPPc8tekphimduz6mZTRc6IrldTMFFtyLLkjkCgYEAs1WEvSoRcZdkxdjijHXDZs1WtRP2LuQYU298Eb7DoBCPL1eG7L+PQl6tnCAIkgfv6SYZIA76Ds4rzxyKTRKmjzLmWbFb1u8OjV811ohCF0c9onmBAJDN0AAQ/FlmjVX8WqEJWqzJ718TDdHlYKFzW8BiXHoLHNG/w75ITPBAuRsCgYAyeeW8pIX8a3eFcW1+ECIeawD+Bcp/9aqYimOKyLlFIHlSK46xJQd5DvAXgOY1ZsAlnLwa7tbsBDZjuanuWlGCZoS8/wSXBW/OnBw5ya14jp5uN0MicKClVr0f1skamuZyC0PZ9qYFBNANWla41lSu9YUkFu1YBFJojBmmY63X0QKBgEQdvi/AJ47Lg1koEJAzgUrJYjKL/L1J3gAtOFxc0isItf/iou5gGJdAY8R7lk+o2HrslxQkiidOpOGIygE7getCV0nIlwZpg7zdqNDC6yCyGmMvIjs62ywLvh4siWcizsd+pdjpludafi87HvuON/xbSzC9caqJMF5+PtzAVHTa
+  #支付宝公钥
+  alipay_public_key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo4JpykbZB6qX8cFnfDk9W0mpe0oN2Evu7MCfaQm6wuhfdvnc3P3Z2+np7/EUx/G8h2GI8e4W3PVMshTcCUbaVKuTRTIbrRybpyf9/9kWZnLaV2Qd/FovbiSON4kqrSyRhKSk4XEu4df+rtasI0nh92PCiBuFaYR3TgxQKxUgkOdnjUNgu0cPL1qagxE6pw/1LKZxqaUCekMNRrTFZxvuWZNeuiNaGlRa8Y8SrB16n1GJWXFUkNyJLis+6EegBO341hTucx6dtb7EfQ7O7WILGSpTYoSDs1W2ggjT+EcSQYEjG5j+gWmxIyi4I92uEEpnRafHqAT8QX2yokYMceuWEQIDAQAB
+  #format
+  format: json
+  #异步通知回调地址,不能加?id=123这类自定义参数
+  notify_url:
+  #即支付成功之后，需要跳转到的页面
+  return_url:
+  #签名方式
+  sign_type: RSA2
+  #字符编码格式
+  charset: utf-8
+  #支付宝网关，这一项是写死的，正式环境是openapi.alipay.com
+  gatewayUrl: https://openapi.alipay.com/gateway.do
 # Spring
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/video_download?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/img_download?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
     username: root
     password: 123456
   resources:
@@ -37,4 +61,4 @@ logging:
 file-dir: D:/test/
 file-dir1: upload/
 file-dir2: upload2/
-server-url: http://192.168.1.20:1112
+server-url: http://192.168.1.8:80

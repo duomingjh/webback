@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>颐堤港十周年</title>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script type="text/javascript" th:src="@{/saveimg/jquery.min.js}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            wx.config({
+
+                debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+
+                appId: '[[${appid}]]', // 必填，公众号的唯一标识
+
+                timestamp: '[[${timestamp}]]', // 必填，生成签名的时间戳
+
+                nonceStr: '[[${nonceStr}]]', // 必填，生成签名的随机串
+
+                signature: '[[${signature}]]',// 必填，签名
+
+                jsApiList: [
+
+
+
+                    'updateAppMessageShareData',  //分享给朋友
+
+                ] // 必填，需要使用的JS接口列表
+
+            });
+
+
+            wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
+                wx.updateAppMessageShareData({
+                    title: "颐堤港十周年", // 分享标题
+                    desc: "焕然出新，点亮灵感", // 分享描述
+                    link: location.href, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+
+                    imgUrl:"https://s3.328888.xyz/2022/08/15/hTWGi.jpg", // 分享图标
+
+                    success: function () {
+                        console.log("success");// 设置成功
+                    }
+                });
+
+            });
+
+
+
+
+            wx.error(function (res) {
+                alert("error: "+ res.errMsg);
+            });
+
+        });
+
+    </script>
+</head>
+
+<script type="text/javascript" th:src="@{/hcsd/_wxa.js}"></script>
+
+<style>
+    @font-face {
+        font-family: "HansKendrick Regular";
+        src:url("/hcsd/字体文件/HansKendrick Regular.ttf");
+
+        font-style: normal;
+    }
+    body{
+        margin: 0px;
+    }
+    .background {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('https://makeshows.top/myFile/home.gif');
+        position: fixed;
+        z-index: 10000;
+    }
+    .background1 {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('/hcsd/20.png');
+        position: fixed;
+        z-index: 10000;
+    }
+    .background2 {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('/hcsd/ewm.png');
+        position: fixed;
+        z-index: 10000;
+    }
+    .background3{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('https://makeshows.top/myFile/home.gif');
+        position: fixed;
+        z-index: 10000;
+    }
+</style>
+<body>
+<div>
+    <audio  loop="loop" id="audios" style="position: absolute">
+        <source src="/img/bg.mp3" type="audio/mp3"/>
+    </audio>
+
+    <div class='background' id="bg">
+        <img id="2wm" src="/hcsd/二维码.png" style="display: none;width: 62rem;margin-left: 0rem;margin-top: 0rem">
+        <img onclick="toden()" id="stbut" src="/hcsd/start.png" style="position: absolute;left: 21%;top: 75%;width: 37rem">
+        <div id="showbut" style="position: absolute;display: none ;height: 100%">
+            <img onclick="anj(1)" id="but1" src="/hcsd/2/21-1.png" style="width: 47%;margin-left: 6%;margin-top: 27%">
+            <img onclick="anj(2)" id="but2" src="/hcsd/2/22-1.png" style="width: 47%;margin-left: -4%;margin-top: 14%">
+            <img onclick="anj(3)" id="but3" src="/hcsd/2/23-1.png" style="width: 47%;margin-left: 6%;margin-top: -4%">
+            <img onclick="anj(4)" id="but4" src="/hcsd/2/24-1.png" style="width: 47%;margin-left: -4%;margin-top: -4%">
+            <img onclick="anj(5)" id="but5" src="/hcsd/2/25-1.png" style="width: 47%;margin-left:6%;margin-top: -4%">
+            <img onclick="anj(6)" id="but6" src="/hcsd/2/26-1.png" style="width: 47%;margin-left: -4%;margin-top: -4%">
+            <img onclick="anj(7)" id="but7" src="/hcsd/2/27-1.png" style="width: 47%;margin-left: 6%;margin-top: -4%">
+            <img onclick="anj(8)" id="but8" src="/hcsd/2/28-1.png" style="width: 47%;margin-left: -4%;margin-top: -4%">
+            <img onclick="anj(9)" id="but9" src="/hcsd/2/29-1.png" style="width: 47%;margin-left: 6%;margin-top: -4%">
+            <img onclick="anj(10)" id="but10" src="/hcsd/2/210-1.png" style="width: 47%;margin-left: -4%;margin-top: -4%">
+            <img onclick="send()" src="/hcsd/2/211.png" style="position: absolute;left: 20%;bottom: 15%;width: 37rem">
+            <div id="trip" style="display: none;position: absolute;margin-left: 15rem;margin-top: -65rem">
+                <img id="tc" src="/hcsd/点亮排名弹窗.png" style="width: 62rem;margin-left: -15rem;margin-top: -27rem">
+                <img id="load2" src="/hcsd/loading.gif" style="display:none;position: absolute;width: 6rem;margin-left: -35rem;margin-top: 40rem">
+                <span id="num" style="font-family: HansKendrick Regular; margin-top: 29.5rem;position: absolute;color: white;margin-left: -36rem;font-size: 5rem" ></span>
+                <span id="num1" style="font-family: HansKendrick Regular;margin-top: 29.5rem;position: absolute;color: white;margin-left: -33rem;font-size: 5rem" ></span>
+                <span id="num2" style="font-family: HansKendrick Regular;margin-top: 29.5rem;position: absolute;color: white;margin-left: -29rem;font-size: 5rem" ></span>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<script>
+   // var source = $WXA.init("/img/bg.mp3", true, true);
+    var colos=["#0d7673","#ebe936","#8756cc","#e7181c","#e3007f","#00b8ee","#4f60b7","#aacc03","#6dba4f","#f29739"];
+    var number=0;
+    var isbut=0;
+
+   console.log(location.href);
+
+
+    function toden() {
+       // document.getElementById('audios').play();
+        document.getElementById('bg').className='background1';
+        document.getElementById('stbut').style.display='none';
+        document.getElementById('showbut').style.display='block';
+    }
+    function anj(value) {
+        number=value;
+        for(var i=1;i<=10;i++){
+            document.getElementById('but'+i).src='/hcsd/2/2'+i+'-1.png'
+        }
+        document.getElementById('but'+value).src='/hcsd/2/2'+value+'-2.png'
+
+    }
+    function tripno() {
+        isbut=0;
+        document.getElementById('trip').style.display='none';
+        document.getElementById('load2').style.display='none';
+    }
+    function tripno1() {
+
+        document.getElementById('showbut').style.display='none';
+        document.getElementById('2wm').style.display='block';
+
+
+
+        var t1 = window.setTimeout(reload2,10000);
+
+    }
+    function reload2() {
+        location.reload();
+    }
+    function send() {
+        if(isbut==1){
+            return;
+        }
+        if(number!=0){
+            $.ajax({
+                type:"get",
+                //url: "http://192.168.1.10/view/dianden?number="+number,
+                 url : "http://makeshows.cn:8989/view/dianden?number="+number,
+                dataType:"text",
+                success:function(result) {
+                    if(result!="no"){
+                        var a=result.split('');
+                        if(a.length==1){
+                            document.getElementById("num1").style.color=randcolor();
+                            $("#num").text('');
+                            $("#num1").text('');
+                            $("#num2").text('');
+                            $("#num1").text(a[0]);
+
+                        }else if(a.length==2){
+                            document.getElementById("num1").style.color=randcolor();
+                            document.getElementById("num2").style.color=randcolor();
+                            $("#num").text('');
+                            $("#num1").text('');
+                            $("#num2").text('');
+                            $("#num1").text(a[0]);
+                            $("#num2").text(a[1]);
+
+                            document.getElementById("num1").style.marginLeft='-34rem';
+                            document.getElementById("num2").style.marginLeft='-31rem';
+                        }else if(a.length==3){
+                            document.getElementById("num").style.color=randcolor();
+                            document.getElementById("num1").style.color=randcolor();
+                            document.getElementById("num2").style.color=randcolor();
+                            $("#num").text('');
+                            $("#num1").text('');
+                            $("#num2").text('');
+                            $("#num").text(a[0]);
+                            $("#num1").text(a[1]);
+                            $("#num2").text(a[2]);
+
+                        }
+                        document.getElementById('trip').style.display='block';
+                        document.getElementById('tc').src='/hcsd/点亮排名弹窗.png';
+                        var t1 = window.setTimeout(tripno1,4000);
+                    }else {
+                        $("#num").text('');
+                        $("#num1").text('');
+                        $("#num2").text('');
+                        document.getElementById('tc').src='/hcsd/请稍后弹窗.png';
+
+                        document.getElementById('trip').style.display='block';
+                        document.getElementById('load2').style.display='block';
+
+                        var t1 = window.setTimeout(tripno,4000);
+                    }
+                    console.log(result)
+
+
+
+
+
+                    isbut=1;
+                },
+            });
+        }
+    }
+    function randcolor() {
+        var a=Math.floor(Math.random()*10);
+        return colos[a];
+    }
+   var t1 = window.setTimeout(rebg,500);
+
+function rebg() {
+    document.getElementById('bg').className='background3';
+}
+</script>
+</html>
