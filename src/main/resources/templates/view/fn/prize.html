@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>奖品核销</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script type="text/javascript" th:src="@{/saveimg/jquery.min.js}"></script>
+</head>
+<body>
+
+<div class="form-group" style="margin-top: 25%;">
+    <label >核销码</label>
+    <input id="input" type="text" class="form-control"  placeholder="">
+</div>
+<div>
+    <span id="hx" style="font-size: 28px" ></span>
+</div>
+<div style="margin-top: 40%">
+    <button type="button" id="btn1" style="margin-left: 15%;width: 25%" class="btn btn-primary">查询</button>
+
+    <!-- Indicates a successful or positive action -->
+    <button type="button" id="btn2" style="margin-left: 15%;width: 25%" class="btn btn-success">核销</button>
+
+</div>
+
+</body>
+<script>
+       var url='https://makeshows.top/';
+        var oBtn = document.getElementById("btn1");
+        var oAlert = document.getElementById("btn2");
+        var aInputs = document.getElementById("input");
+
+        oBtn.onclick = function(){
+            $.ajax({
+                method: "post",
+                url: url+"select/prize",
+                data: {
+                    prize: aInputs.value
+                },
+                success: function(result){
+
+                   if(result.msg=="ok"){
+                       document.getElementById('hx').innerText="未核销"
+
+                   }else{
+                       document.getElementById('hx').innerText="已核销"
+                   }
+
+                },
+                error: function(msg){
+                    alert(msg);
+                }
+            })
+
+    }
+        oAlert.onclick = function(){
+            $.ajax({
+                method: "post",
+                url: url+"select/hx",
+                data: {
+                    prize: aInputs.value
+                },
+                success: function(result){
+
+                    if(result.msg=="ok"){
+                        document.getElementById('hx').innerText="核销成功"
+
+                    }else{
+                        document.getElementById('hx').innerText="已核销或核销码错误"
+                    }
+
+                },
+                error: function(msg){
+                    alert(msg);
+                }
+            })
+
+        }
+
+</script>
+</html>

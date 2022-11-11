@@ -1,0 +1,180 @@
+2022-09-02 14:00:37,027 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 35540 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-02 14:00:37,038 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-02 14:00:37,039 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-02 14:00:39,304 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 2.829 seconds (JVM running for 3.876)
+2022-09-02 14:01:03,940 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:01:03,959 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:01:03,972 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:01:39,856 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 28676 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-02 14:01:39,858 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-02 14:01:39,859 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-02 14:01:41,145 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.545 seconds (JVM running for 2.085)
+2022-09-02 14:01:42,670 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:01:42,685 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:01:42,699 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:02:54,534 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 24076 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-02 14:02:54,538 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-02 14:02:54,538 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-02 14:02:55,782 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.518 seconds (JVM running for 2.061)
+2022-09-02 14:02:57,740 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:02:57,757 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:02:57,770 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:02:57,773 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into dataCount(date,type,number) value (?,?,?) 
+2022-09-02 14:02:57,774 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 1(Integer)
+2022-09-02 14:02:57,851 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:05:37,574 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 26752 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-02 14:05:37,575 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-02 14:05:37,576 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-02 14:05:38,836 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.519 seconds (JVM running for 2.054)
+2022-09-02 14:05:44,560 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:05:44,576 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:05:44,591 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:05:44,594 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update dataCount set date=?,type =?,number =? where type =? and date ={date } 
+2022-09-02 14:05:44,595 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 2(Integer), 1(String)
+2022-09-02 14:06:52,013 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 5616 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-02 14:06:52,015 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-02 14:06:52,016 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-02 14:06:53,334 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.557 seconds (JVM running for 2.108)
+2022-09-02 14:06:54,816 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:06:54,832 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:06:54,846 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:06:54,850 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update dataCount set date=?,type =?,number =? where type =? and date=? 
+2022-09-02 14:06:54,851 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 2(Integer), 1(String), 2022年09月02日(String)
+2022-09-02 14:06:54,863 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:28:04,181 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 35136 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-02 14:28:04,191 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-02 14:28:04,191 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-02 14:28:05,413 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.483 seconds (JVM running for 2.024)
+2022-09-02 14:30:42,463 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 24464 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-02 14:30:42,465 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-02 14:30:42,465 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-02 14:30:43,688 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.48 seconds (JVM running for 2.031)
+2022-09-02 14:33:55,004 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 19832 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-02 14:33:55,006 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-02 14:33:55,007 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-02 14:33:56,265 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.526 seconds (JVM running for 2.065)
+2022-09-02 14:33:59,502 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:33:59,517 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2022-09-02 14:33:59,531 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:34:14,379 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:34:14,379 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: “1”(String)
+2022-09-02 14:34:14,380 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:34:19,529 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:34:19,529 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: “1”(String)
+2022-09-02 14:34:19,530 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:34:55,417 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:34:55,418 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2022-09-02 14:34:55,419 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:35:26,668 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:35:26,669 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:35:26,670 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:35:26,671 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update dataCount set date=?,type =?,number =? where type =? and date=? 
+2022-09-02 14:35:26,671 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 3(Integer), 1(String), 2022年09月02日(String)
+2022-09-02 14:35:26,707 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:35:30,072 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:35:30,072 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: “1”(String)
+2022-09-02 14:35:30,074 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:35:36,354 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:35:36,355 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2022-09-02 14:35:36,356 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:35:39,174 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:35:39,174 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:35:39,175 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:35:39,176 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update dataCount set date=?,type =?,number =? where type =? and date=? 
+2022-09-02 14:35:39,176 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 4(Integer), 1(String), 2022年09月02日(String)
+2022-09-02 14:35:39,187 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:35:40,840 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:35:40,841 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2022-09-02 14:35:40,842 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:35:42,689 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:35:42,690 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:35:42,691 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:35:42,692 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update dataCount set date=?,type =?,number =? where type =? and date=? 
+2022-09-02 14:35:42,692 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 5(Integer), 1(String), 2022年09月02日(String)
+2022-09-02 14:35:42,707 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:35:44,093 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:35:44,094 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2022-09-02 14:35:44,095 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:35:52,973 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:35:52,973 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2022-09-02 14:35:52,974 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:35:55,723 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:35:55,724 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:35:55,725 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:35:55,725 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update dataCount set date=?,type =?,number =? where type =? and date=? 
+2022-09-02 14:35:55,726 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 6(Integer), 1(String), 2022年09月02日(String)
+2022-09-02 14:35:55,735 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:36:00,924 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:36:00,924 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2022-09-02 14:36:00,926 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:36:05,204 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:36:05,205 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(String)
+2022-09-02 14:36:05,206 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:36:10,957 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:36:10,958 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(String)
+2022-09-02 14:36:10,959 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:36:16,215 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:36:16,215 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:36:16,216 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:36:16,217 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update dataCount set date=?,type =?,number =? where type =? and date=? 
+2022-09-02 14:36:16,217 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 7(Integer), 1(String), 2022年09月02日(String)
+2022-09-02 14:36:16,230 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:36:21,107 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:36:21,108 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:36:21,109 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:36:21,109 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update dataCount set date=?,type =?,number =? where type =? and date=? 
+2022-09-02 14:36:21,110 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 8(Integer), 1(String), 2022年09月02日(String)
+2022-09-02 14:36:21,121 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:36:25,060 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:36:25,060 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:36:25,061 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:36:25,062 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update dataCount set date=?,type =?,number =? where type =? and date=? 
+2022-09-02 14:36:25,062 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 9(Integer), 1(String), 2022年09月02日(String)
+2022-09-02 14:36:25,080 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:36:28,648 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:36:28,649 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(String)
+2022-09-02 14:36:28,649 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:36:34,150 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:36:34,151 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(String)
+2022-09-02 14:36:34,152 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:36:44,889 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:36:44,889 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:36:44,890 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:36:44,890 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update dataCount set date=?,type =?,number =? where type =? and date=? 
+2022-09-02 14:36:44,891 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 10(Integer), 1(String), 2022年09月02日(String)
+2022-09-02 14:36:44,903 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:37:18,413 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:37:18,413 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String), 2022年09月02日(String)
+2022-09-02 14:37:18,415 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:37:18,416 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update dataCount set date=?,type =?,number =? where type =? and date=? 
+2022-09-02 14:37:18,416 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 1(String), 11(Integer), 1(String), 2022年09月02日(String)
+2022-09-02 14:37:18,429 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:37:54,556 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 32044 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-02 14:37:54,558 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-02 14:37:54,558 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-02 14:37:55,833 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.527 seconds (JVM running for 2.08)
+2022-09-02 14:37:58,962 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:37:58,978 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(String), 2022年09月02日(String)
+2022-09-02 14:37:58,991 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:37:58,994 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into dataCount(date,type,number) value (?,?,?) 
+2022-09-02 14:37:58,995 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 2(String), 1(Integer)
+2022-09-02 14:37:59,010 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:38:04,512 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:38:04,512 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(String)
+2022-09-02 14:38:04,514 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 14:38:50,970 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? and date=? 
+2022-09-02 14:38:50,971 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 点灯十周年(String), 2022年09月02日(String)
+2022-09-02 14:38:50,972 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-09-02 14:38:50,972 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into dataCount(date,type,number) value (?,?,?) 
+2022-09-02 14:38:50,973 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月02日(String), 点灯十周年(String), 1(Integer)
+2022-09-02 14:38:50,986 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-09-02 14:38:55,487 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 14:38:55,488 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(String)
+2022-09-02 14:38:55,488 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-09-02 15:41:21,327 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 31060 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-02 15:41:21,329 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-02 15:41:21,329 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-02 15:41:23,372 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 2.412 seconds (JVM running for 3.374)
+2022-09-02 15:41:42,905 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from dataCount where type=? 
+2022-09-02 15:41:42,938 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2022-09-02 15:41:42,953 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

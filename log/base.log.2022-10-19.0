@@ -1,0 +1,101 @@
+2022-10-19 09:53:06,663 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 14144 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-10-19 09:53:06,675 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-10-19 09:53:06,675 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-10-19 09:53:08,133 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-19 09:53:08,134 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-19 09:53:08,135 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-10-19 09:53:09,607 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 3.389 seconds (JVM running for 4.427)
+2022-10-19 09:53:13,504 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 09:53:13,524 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String)
+2022-10-19 09:53:13,567 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-19 09:53:13,570 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into fnuser(phone,name,wxname,company,prize,date,read) value (?,?,?,?,?,?,?) 
+2022-10-19 09:53:13,570 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String), 税洪伟(String), 深喜。(String), 豫南游戏(String), null, 2022年10月19日(String), null
+2022-10-19 09:54:29,591 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 7232 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-10-19 09:54:29,593 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-10-19 09:54:29,594 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-10-19 09:54:30,236 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-19 09:54:30,236 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-19 09:54:30,236 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-10-19 09:54:30,900 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.549 seconds (JVM running for 2.111)
+2022-10-19 09:54:36,397 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 09:54:36,410 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String)
+2022-10-19 09:54:36,420 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-19 09:54:36,424 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into fnuser(phone,name,wxname,company,prize,date,`read`) value (?,?,?,?,?,?,?) 
+2022-10-19 09:54:36,424 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String), 税洪伟(String), 深喜。(String), 豫南游戏(String), null, 2022年10月19日(String), null
+2022-10-19 09:54:36,443 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-10-19 09:54:46,262 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 09:54:46,262 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 09:54:46,262 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String)
+2022-10-19 09:54:46,262 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String)
+2022-10-19 09:54:46,266 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 09:54:46,266 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 09:55:08,576 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 09:55:08,576 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String)
+2022-10-19 09:55:08,578 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 09:55:08,579 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update fnuser set phone=?,name=?,wxname=?,company=?,prize=?,date=?,`read`=? where phone=? 
+2022-10-19 09:55:08,580 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String), 税洪伟(String), 深喜。(String), 豫南游戏(String), null, 2022年10月19日(String), 1(String), 13411569808(String)
+2022-10-19 09:55:08,600 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-10-19 09:55:13,313 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 09:55:13,314 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String)
+2022-10-19 09:55:13,316 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 09:55:24,647 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 09:55:24,648 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String)
+2022-10-19 09:55:24,649 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 09:55:26,556 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 09:55:26,556 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String)
+2022-10-19 09:55:26,557 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 09:55:26,558 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 09:55:26,558 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 888(String)
+2022-10-19 09:55:26,559 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 09:55:26,559 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update fnuser set phone=?,name=?,wxname=?,company=?,prize=?,date=?,`read`=? where phone=? 
+2022-10-19 09:55:26,560 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 888(String), null, null, null, null, null, 10,20,29,39(String), 888(String)
+2022-10-19 09:55:26,574 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-10-19 09:55:26,575 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: update fnuser set phone=?,name=?,wxname=?,company=?,prize=?,date=?,`read`=? where phone=? 
+2022-10-19 09:55:26,575 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String), 税洪伟(String), 深喜。(String), 豫南游戏(String), 2(String), 2022年10月19日(String), 1(String), 13411569808(String)
+2022-10-19 09:55:26,592 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-10-19 16:00:35,942 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 16:00:35,943 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String)
+2022-10-19 16:00:35,945 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 17:09:20,576 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 22428 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-10-19 17:09:20,577 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-10-19 17:09:20,578 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-10-19 17:09:22,090 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-19 17:09:22,091 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-19 17:09:22,091 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-10-19 17:09:23,293 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 3.196 seconds (JVM running for 4.374)
+2022-10-19 17:11:18,924 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 17:11:18,943 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18885662312(String)
+2022-10-19 17:11:18,957 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-19 17:11:18,962 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into fnuser(phone,name,wxname,company,prize,date,`read`,job) value (?,?,?,?,?,?,?,?) 
+2022-10-19 17:11:18,962 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 18885662312(String), 税洪伟(String), 深喜。(String), 小米东方饭店发的发的放到(String), null, 2022年10月19日(String), null, 老板(String)
+2022-10-19 17:11:18,982 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-10-19 17:12:44,529 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 17:12:44,529 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String)
+2022-10-19 17:12:44,532 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 17:12:59,577 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 17:12:59,578 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13411569808(String)
+2022-10-19 17:12:59,579 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 17:17:18,324 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 17:17:18,324 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678912(String)
+2022-10-19 17:17:18,325 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 17:17:30,199 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 17:17:30,199 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678912(String)
+2022-10-19 17:17:30,200 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 17:17:37,095 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 17:17:37,096 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678912(String)
+2022-10-19 17:17:37,097 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 17:17:37,098 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 17:17:37,099 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678912(String)
+2022-10-19 17:17:37,099 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 17:17:48,743 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 17:17:48,743 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 17:17:48,743 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678912(String)
+2022-10-19 17:17:48,743 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678912(String)
+2022-10-19 17:17:48,744 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 17:17:48,744 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-19 18:06:55,917 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-19 18:06:55,918 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11111111111(String)
+2022-10-19 18:06:55,918 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-19 18:06:55,919 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into fnuser(phone,name,wxname,company,prize,date,`read`,job) value (?,?,?,?,?,?,?,?) 
+2022-10-19 18:06:55,919 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11111111111(String), 123456(String), 深喜。(String), 222(String), null, 2022年10月19日(String), null, 3333(String)
+2022-10-19 18:06:55,933 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

@@ -1,0 +1,40 @@
+2022-10-23 22:44:57,125 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-MNQ005U with PID 13584 (E:\test\web\videodownload\videodownload\target\classes started by YAHD in E:\test\web\videodownload\videodownload)
+2022-10-23 22:44:57,128 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-10-23 22:44:57,129 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-10-23 22:44:59,038 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-23 22:44:59,038 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-23 22:44:59,040 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-10-23 22:45:00,361 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 3.726 seconds (JVM running for 4.707)
+2022-10-23 22:45:55,048 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-23 22:45:55,066 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String)
+2022-10-23 22:45:55,097 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-23 22:47:10,002 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-23 22:47:10,002 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-23 22:47:10,003 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String)
+2022-10-23 22:47:10,003 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String)
+2022-10-23 22:47:10,004 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-23 22:47:10,004 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-23 22:47:12,778 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-23 22:47:12,778 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String)
+2022-10-23 22:47:12,779 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-23 22:47:15,978 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-23 22:47:15,978 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String)
+2022-10-23 22:47:15,979 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-23 22:47:15,980 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-23 22:47:15,980 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 888(String)
+2022-10-23 22:47:15,982 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-23 22:47:56,210 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-23 22:47:56,210 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-23 22:47:56,211 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String)
+2022-10-23 22:47:56,211 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String)
+2022-10-23 22:47:56,212 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-23 22:47:56,212 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-23 22:47:58,858 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-23 22:47:58,859 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String)
+2022-10-23 22:47:58,861 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-23 22:48:11,553 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-23 22:48:11,553 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String)
+2022-10-23 22:48:11,555 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2022-10-23 23:00:00,014 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into Persons(date,count,count1) values (?,?,?) 
+2022-10-23 23:00:00,015 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年10月23日(String), 0(Integer), 0(Integer)
+2022-10-23 23:00:00,035 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

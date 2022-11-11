@@ -1,0 +1,17 @@
+2022-09-15 09:47:02,715 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 21440 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-15 09:47:02,718 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-15 09:47:02,719 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-15 09:47:04,250 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-09-15 09:47:04,250 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-09-15 09:47:04,250 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-09-15 09:47:05,646 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 3.433 seconds (JVM running for 5.103)
+2022-09-15 13:49:22,410 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 21432 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-09-15 13:49:22,420 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-09-15 13:49:22,421 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-09-15 13:49:23,224 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-09-15 13:49:23,225 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-09-15 13:49:23,225 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-09-15 13:49:24,039 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.871 seconds (JVM running for 2.478)
+2022-09-15 22:59:59,145 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into Persons(date,count,count1) values (?,?,?) 
+2022-09-15 22:59:59,166 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年09月15日(String), 0(Integer), 0(Integer)
+2022-09-15 22:59:59,238 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

@@ -1,0 +1,4 @@
+2022-02-28 11:44:31,519 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 2328 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-02-28 11:44:31,605 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-02-28 11:44:31,606 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-02-28 11:44:34,482 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 3.421 seconds (JVM running for 8.198)

@@ -1,0 +1,40 @@
+2022-06-13 11:47:34,883 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 12984 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-13 11:47:34,903 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-13 11:47:34,904 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-13 11:47:37,477 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 3.098 seconds (JVM running for 4.221)
+2022-06-13 13:42:32,428 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 9116 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-13 13:42:32,429 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-13 13:42:32,430 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-13 13:42:33,610 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.447 seconds (JVM running for 2.081)
+2022-06-13 13:45:26,020 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 21152 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-13 13:45:26,022 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-13 13:45:26,023 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-13 13:45:27,199 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.434 seconds (JVM running for 2.004)
+2022-06-13 13:46:37,301 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 15120 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-13 13:46:37,303 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-13 13:46:37,303 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-13 13:46:38,494 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.431 seconds (JVM running for 1.983)
+2022-06-13 13:51:05,883 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 20776 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-13 13:51:05,885 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-13 13:51:05,885 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-13 13:51:07,158 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.516 seconds (JVM running for 2.06)
+2022-06-13 13:54:04,537 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 364 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-13 13:54:04,540 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-13 13:54:04,541 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-13 13:54:05,681 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.4 seconds (JVM running for 1.972)
+2022-06-13 13:58:20,957 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 22464 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-13 13:58:20,959 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-13 13:58:20,959 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-13 13:58:22,175 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.474 seconds (JVM running for 2.028)
+2022-06-13 14:00:42,186 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 14780 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-13 14:00:42,188 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-13 14:00:42,188 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-13 14:00:43,452 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.539 seconds (JVM running for 2.117)
+2022-06-13 15:02:13,145 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2022-06-13 15:02:13,159 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.12:1112/myFile/manhua/漫画框.png(String), cartoon (String)
+2022-06-13 15:02:13,198 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-06-13 15:02:13,203 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.12:1112/view/e1a7a7d4c6c74a3f8995c50f56e9088c
+2022-06-13 15:02:13,397 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/e1a7a7d4c6c74a3f8995c50f56e9088c~.jpg！
+2022-06-13 15:02:13,398 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2022-06-13 15:02:13,398 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: e1a7a7d4c6c74a3f8995c50f56e9088c~(String), http://192.168.1.12:1112/myFile/manhua/漫画框.png(String), http://192.168.1.12:1112/myFile/manhua/e1a7a7d4c6c74a3f8995c50f56e9088c~.jpg(String), cartoon (String)
+2022-06-13 15:02:13,416 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

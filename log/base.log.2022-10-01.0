@@ -1,0 +1,3 @@
+2022-10-01 22:59:58,998 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into Persons(date,count,count1) values (?,?,?) 
+2022-10-01 22:59:59,009 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年10月01日(String), 0(Integer), 0(Integer)
+2022-10-01 22:59:59,022 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

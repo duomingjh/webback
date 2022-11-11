@@ -1,0 +1,27 @@
+2022-10-21 13:45:31,252 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-MNQ005U with PID 11392 (E:\test\web\videodownload\videodownload\target\classes started by YAHD in E:\test\web\videodownload\videodownload)
+2022-10-21 13:45:31,255 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-10-21 13:45:31,255 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-10-21 13:45:31,900 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-21 13:45:31,901 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-21 13:45:31,901 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-10-21 13:45:32,633 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.619 seconds (JVM running for 2.185)
+2022-10-21 14:06:55,591 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-MNQ005U with PID 5304 (E:\test\web\videodownload\videodownload\target\classes started by YAHD in E:\test\web\videodownload\videodownload)
+2022-10-21 14:06:55,593 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-10-21 14:06:55,593 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-10-21 14:06:56,263 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-21 14:06:56,263 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-21 14:06:56,264 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-10-21 14:06:56,949 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.607 seconds (JVM running for 2.277)
+2022-10-21 14:08:23,281 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-MNQ005U with PID 14972 (E:\test\web\videodownload\videodownload\target\classes started by YAHD in E:\test\web\videodownload\videodownload)
+2022-10-21 14:08:23,283 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-10-21 14:08:23,283 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-10-21 14:08:23,943 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-21 14:08:23,944 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-10-21 14:08:23,944 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-10-21 14:08:24,713 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.678 seconds (JVM running for 2.212)
+2022-10-21 14:08:29,786 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from fnuser where phone=? 
+2022-10-21 14:08:29,799 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String)
+2022-10-21 14:08:29,812 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2022-10-21 14:08:29,815 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into fnuser(phone,name,wxname,company,prize,date,`read`,job) value (?,?,?,?,?,?,?,?) 
+2022-10-21 14:08:29,816 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12345678911(String), 税宏伟(String), 深喜。(String), 大苏打(String), null, 2022年10月21日(String), null, 顶顶顶(String)
+2022-10-21 14:08:29,822 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

@@ -1,0 +1,12 @@
+2022-03-30 14:30:20,681 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 19916 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-03-30 14:30:20,685 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-03-30 14:30:20,685 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-03-30 14:30:22,544 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 2.176 seconds (JVM running for 3.119)
+2022-03-30 14:42:50,186 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 10844 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-03-30 14:42:50,188 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-03-30 14:42:50,188 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-03-30 14:42:51,378 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.457 seconds (JVM running for 2.002)
+2022-03-30 14:43:56,201 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 14968 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-03-30 14:43:56,202 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-03-30 14:43:56,203 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-03-30 14:43:57,398 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.463 seconds (JVM running for 2.053)

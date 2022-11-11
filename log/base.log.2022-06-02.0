@@ -1,0 +1,40 @@
+2022-06-02 10:08:36,576 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 19780 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-02 10:08:36,579 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-02 10:08:36,579 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-02 10:08:38,795 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 2.821 seconds (JVM running for 3.833)
+2022-06-02 10:14:42,814 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 17012 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-02 10:14:42,817 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-02 10:14:42,817 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-02 10:14:44,034 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.463 seconds (JVM running for 1.993)
+2022-06-02 10:15:48,600 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/20224.793695.jpg！
+2022-06-02 10:23:58,623 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 23768 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-02 10:23:58,626 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-02 10:23:58,626 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-02 10:23:59,820 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.455 seconds (JVM running for 2.006)
+2022-06-02 10:24:57,086 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/20222.876747.jpg！
+2022-06-02 10:27:20,973 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/202211.92963.jpg！
+2022-06-02 10:29:17,184 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 24848 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-02 10:29:17,186 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-02 10:29:17,186 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-02 10:29:18,407 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.466 seconds (JVM running for 2.013)
+2022-06-02 10:31:37,948 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 24768 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-02 10:31:37,950 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-02 10:31:37,950 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-02 10:31:39,166 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.462 seconds (JVM running for 2.012)
+2022-06-02 10:31:47,295 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/20222.451171.jpg！
+2022-06-02 10:36:04,071 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/20222.376143.jpg！
+2022-06-02 10:38:32,831 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 19936 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-02 10:38:32,833 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-02 10:38:32,833 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-02 10:38:34,101 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.542 seconds (JVM running for 2.09)
+2022-06-02 10:38:44,027 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/20224.875675.jpg！
+2022-06-02 10:41:08,171 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/20224.095932.jpg！
+2022-06-02 10:42:20,863 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 7136 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-06-02 10:42:20,872 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-06-02 10:42:20,873 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-06-02 10:42:22,042 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.435 seconds (JVM running for 2.043)
+2022-06-02 10:42:31,427 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/20222.303484.jpg！
+2022-06-02 10:43:07,084 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/20225.733062.jpg！
+2022-06-02 10:44:24,777 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/20223.39871.jpg！
+2022-06-02 10:46:26,744 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/20223.34429.jpg！
+2022-06-02 10:47:18,253 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/20223.018678.jpg！

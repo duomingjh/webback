@@ -1,0 +1,8 @@
+2021-12-28 11:29:13,080 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-HL8I7HO with PID 12468 (D:\BaiduNetdiskDownload\videodownload\videodownload\target\classes started by Shui in D:\BaiduNetdiskDownload\videodownload\videodownload)
+2021-12-28 11:29:13,084 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-28 11:29:13,084 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-28 11:29:15,137 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 2.521 seconds (JVM running for 3.841)
+2021-12-28 11:29:53,060 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-HL8I7HO with PID 10904 (D:\BaiduNetdiskDownload\videodownload\videodownload\target\classes started by Shui in D:\BaiduNetdiskDownload\videodownload\videodownload)
+2021-12-28 11:29:53,065 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-28 11:29:53,065 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-28 11:29:54,627 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.964 seconds (JVM running for 2.836)

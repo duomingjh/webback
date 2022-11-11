@@ -1,0 +1,6 @@
+2022-08-02 22:59:58,358 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into Persons(date,count,count1) values (?,?,?) 
+2022-08-02 22:59:58,359 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年08月02日(String), 0(Integer), 0(Integer)
+2022-08-02 22:59:58,376 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2022-08-03 10:08:48,467 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 18468 (D:\test\web\videodownload\videodownload\target\classes started by YAHD in D:\test\web\videodownload\videodownload)
+2022-08-03 10:08:48,473 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-08-03 10:08:48,474 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default

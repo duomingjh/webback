@@ -1,0 +1,123 @@
+2021-12-17 09:31:00,673 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 1856 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-17 09:31:00,676 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-17 09:31:00,677 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-17 09:31:02,815 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 2.529 seconds (JVM running for 3.502)
+2021-12-17 09:31:26,327 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 16456 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-17 09:31:26,329 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-17 09:31:26,329 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-17 09:31:27,437 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.328 seconds (JVM running for 1.749)
+2021-12-17 09:55:22,682 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 18600 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-17 09:55:22,684 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-17 09:55:22,684 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-17 09:55:23,800 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.372 seconds (JVM running for 1.831)
+2021-12-17 10:11:05,785 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 19408 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-17 10:11:05,788 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-17 10:11:05,789 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-17 10:11:06,865 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.3 seconds (JVM running for 1.737)
+2021-12-17 10:11:36,820 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 17668 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-17 10:11:36,822 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-17 10:11:36,822 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-17 10:11:37,830 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.239 seconds (JVM running for 1.694)
+2021-12-17 10:44:20,562 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-0SRUP50 with PID 18412 (C:\Users\YAHD\Desktop\test\videodownload\videodownload\target\classes started by YAHD in C:\Users\YAHD\Desktop\test\videodownload\videodownload)
+2021-12-17 10:44:20,563 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-12-17 10:44:20,564 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2021-12-17 10:44:21,747 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.466 seconds (JVM running for 2.358)
+2021-12-17 11:01:12,682 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-17 11:01:12,703 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/65.92621.jpg(String), mh(String)
+2021-12-17 11:01:12,765 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-17 11:01:12,774 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/ae28c44a20a64126b2eeab68a4025053
+2021-12-17 11:01:12,946 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/ae28c44a20a64126b2eeab68a4025053~.jpg！
+2021-12-17 11:01:12,947 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-17 11:01:12,948 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: ae28c44a20a64126b2eeab68a4025053~(String), http://192.168.1.20:1112/myFile/manhua/65.92621.jpg(String), http://192.168.1.20:1112/myFile/manhua/ae28c44a20a64126b2eeab68a4025053~.jpg(String), mh(String)
+2021-12-17 11:01:12,977 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-17 11:02:37,750 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-17 11:02:37,751 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/151.6392.jpg(String), mh(String)
+2021-12-17 11:02:37,751 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-17 11:02:37,752 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/4210bc1d7d6f4703b1a3f19fcaf7f9dd
+2021-12-17 11:02:37,776 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/4210bc1d7d6f4703b1a3f19fcaf7f9dd~.jpg！
+2021-12-17 11:02:37,777 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-17 11:02:37,778 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4210bc1d7d6f4703b1a3f19fcaf7f9dd~(String), http://192.168.1.20:1112/myFile/manhua/151.6392.jpg(String), http://192.168.1.20:1112/myFile/manhua/4210bc1d7d6f4703b1a3f19fcaf7f9dd~.jpg(String), mh(String)
+2021-12-17 11:02:37,798 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-17 11:02:45,639 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-17 11:02:45,640 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4210bc1d7d6f4703b1a3f19fcaf7f9dd~(String)
+2021-12-17 11:02:45,643 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-17 11:02:59,496 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-17 11:02:59,497 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4210bc1d7d6f4703b1a3f19fcaf7f9dd~(String)
+2021-12-17 11:02:59,497 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-17 11:07:10,444 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-17 11:07:10,444 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/421.0998.jpg(String), mh(String)
+2021-12-17 11:07:10,446 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-17 11:07:10,446 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/533a863033234de5878460cc8195909f
+2021-12-17 11:07:10,472 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/533a863033234de5878460cc8195909f~.jpg！
+2021-12-17 11:07:10,473 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-17 11:07:10,474 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 533a863033234de5878460cc8195909f~(String), http://192.168.1.20:1112/myFile/manhua/421.0998.jpg(String), http://192.168.1.20:1112/myFile/manhua/533a863033234de5878460cc8195909f~.jpg(String), mh(String)
+2021-12-17 11:07:10,492 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-17 11:11:57,736 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-17 11:11:57,737 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/69.21197.jpg(String), mh(String)
+2021-12-17 11:11:57,738 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-17 11:11:57,738 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/daf8b3f670dc4ccd8da9498001872141
+2021-12-17 11:11:57,762 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/daf8b3f670dc4ccd8da9498001872141~.jpg！
+2021-12-17 11:11:57,763 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-17 11:11:57,764 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: daf8b3f670dc4ccd8da9498001872141~(String), http://192.168.1.20:1112/myFile/manhua/69.21197.jpg(String), http://192.168.1.20:1112/myFile/manhua/daf8b3f670dc4ccd8da9498001872141~.jpg(String), mh(String)
+2021-12-17 11:11:57,780 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-17 11:13:12,708 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-17 11:13:12,709 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/144.2193.jpg(String), mh(String)
+2021-12-17 11:13:12,710 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-17 11:13:12,710 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/9d930f4ff544433a9d48c50679bb9c3f
+2021-12-17 11:13:12,733 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/9d930f4ff544433a9d48c50679bb9c3f~.jpg！
+2021-12-17 11:13:12,734 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-17 11:13:12,734 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9d930f4ff544433a9d48c50679bb9c3f~(String), http://192.168.1.20:1112/myFile/manhua/144.2193.jpg(String), http://192.168.1.20:1112/myFile/manhua/9d930f4ff544433a9d48c50679bb9c3f~.jpg(String), mh(String)
+2021-12-17 11:13:12,753 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-17 11:14:33,081 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-17 11:14:33,081 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/224.5797.jpg(String), mh(String)
+2021-12-17 11:14:33,082 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-17 11:14:33,083 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/99d7bd5989824d5f84e77e5d44b4e832
+2021-12-17 11:14:33,107 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/99d7bd5989824d5f84e77e5d44b4e832~.jpg！
+2021-12-17 11:14:33,107 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-17 11:14:33,108 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 99d7bd5989824d5f84e77e5d44b4e832~(String), http://192.168.1.20:1112/myFile/manhua/224.5797.jpg(String), http://192.168.1.20:1112/myFile/manhua/99d7bd5989824d5f84e77e5d44b4e832~.jpg(String), mh(String)
+2021-12-17 11:14:33,122 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-17 11:14:43,896 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-17 11:14:43,896 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 99d7bd5989824d5f84e77e5d44b4e832~(String)
+2021-12-17 11:14:43,897 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-17 11:14:46,585 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-17 11:14:46,586 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 99d7bd5989824d5f84e77e5d44b4e832~(String)
+2021-12-17 11:14:46,587 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-17 17:15:51,564 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-17 17:15:51,568 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/66.69337.jpg(String), mh(String)
+2021-12-17 17:15:51,571 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-17 17:15:51,572 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/10b6db50bdc74d58ab254054836b8a61
+2021-12-17 17:15:51,596 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/10b6db50bdc74d58ab254054836b8a61~.jpg！
+2021-12-17 17:15:51,597 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-17 17:15:51,597 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10b6db50bdc74d58ab254054836b8a61~(String), http://192.168.1.20:1112/myFile/manhua/66.69337.jpg(String), http://192.168.1.20:1112/myFile/manhua/10b6db50bdc74d58ab254054836b8a61~.jpg(String), mh(String)
+2021-12-17 17:15:51,617 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-17 17:18:04,988 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-17 17:18:04,989 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/73.58178.jpg(String), mh(String)
+2021-12-17 17:18:04,991 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-17 17:18:04,991 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/50a397e5dfd94b43b01610b30f045adf
+2021-12-17 17:18:05,014 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/50a397e5dfd94b43b01610b30f045adf~.jpg！
+2021-12-17 17:18:05,015 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-17 17:18:05,015 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 50a397e5dfd94b43b01610b30f045adf~(String), http://192.168.1.20:1112/myFile/manhua/73.58178.jpg(String), http://192.168.1.20:1112/myFile/manhua/50a397e5dfd94b43b01610b30f045adf~.jpg(String), mh(String)
+2021-12-17 17:18:05,028 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-17 17:18:19,084 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-17 17:18:19,084 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 50a397e5dfd94b43b01610b30f045adf~(String)
+2021-12-17 17:18:19,085 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-17 17:18:21,633 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-17 17:18:21,633 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 50a397e5dfd94b43b01610b30f045adf~(String)
+2021-12-17 17:18:21,634 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-17 17:18:33,075 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-17 17:18:33,075 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 50a397e5dfd94b43b01610b30f045adf~(String)
+2021-12-17 17:18:33,076 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-17 17:33:31,183 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file WHERE file_url = ? and qr_code_url = ? 
+2021-12-17 17:33:31,184 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: http://192.168.1.20:1112/myFile/manhua/71.56281.jpg(String), mh(String)
+2021-12-17 17:33:31,186 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2021-12-17 17:33:31,186 INFO (AlFileServiceImpl.java:108)- 二维码的内容链接------->http://192.168.1.20:1112/view/9477e45fd4214f0eba2749a63c987829
+2021-12-17 17:33:31,209 INFO (QRCodeService.java:41)- 生成二维码成功, 位置在：D:/test/manhua/9477e45fd4214f0eba2749a63c987829~.jpg！
+2021-12-17 17:33:31,210 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into al_file ( id, file_url, qr_code_url, type ) values ( ?, ?, ?, ? ) 
+2021-12-17 17:33:31,210 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9477e45fd4214f0eba2749a63c987829~(String), http://192.168.1.20:1112/myFile/manhua/71.56281.jpg(String), http://192.168.1.20:1112/myFile/manhua/9477e45fd4214f0eba2749a63c987829~.jpg(String), mh(String)
+2021-12-17 17:33:31,225 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2021-12-17 17:33:45,828 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-17 17:33:45,828 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9477e45fd4214f0eba2749a63c987829~(String)
+2021-12-17 17:33:45,829 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2021-12-17 17:33:48,075 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, file_url, qr_code_url,type from al_file where id = ? 
+2021-12-17 17:33:48,076 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9477e45fd4214f0eba2749a63c987829~(String)
+2021-12-17 17:33:48,076 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
