@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >2022能源电力国际论坛</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script type="text/javascript" th:src="@{/saveimg/jquery.min.js}"></script>
+</head>
+<style >
+    body {
+
+        margin: 0px;
+        background: url("/qjtu/首页背景.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-size:cover;
+        -webkit-background-size: cover;
+        height: 100%;
+        padding: 0;
+    }
+
+    .box {
+        margin-left: 30%;
+    }
+    .but{
+        position: absolute;
+        outline:none;
+    }
+    .butman{
+        background: url("/qjtu/论坛介绍.png");
+        background-repeat: no-repeat;
+        border: none;
+        background-size: 100%;
+
+    }
+    .butman1{
+        background: url("/qjtu/展位导览.png");
+        background-repeat: no-repeat;
+        border: none;
+        background-size: 100%;
+
+    }
+    .butman2{
+        background: url("/qjtu/演讲预告.png");
+        background-repeat: no-repeat;
+        border: none;
+        background-size: 100%;
+
+    }
+</style>
+
+<body>
+
+
+
+<button   class="butman but" id="but1" onclick="but1(1)" style="width: 64%;top: 45%;height: 10%;left: 18%">
+
+</button>
+<button   class="butman1 but" id="but2" onclick="but1(2)" style="width: 64%;top: 56%;height: 10%;left: 18%"></button>
+
+
+
+
+
+
+
+</body>
+<script>
+
+
+    function  but1(value){
+        if(value=="1"){
+
+            window.location.href="http://makeshows.top/panorama/introduce";
+        }else  if(value=="2"){
+            window.location.href="http://makeshows.top/panorama/index";
+
+        }
+        if(value=="3"){
+
+
+           // window.location.href="http://makeshows.top/kspace/video";
+        }else if(value=="4") {
+          //  window.location.href = "http://makeshows.top/kspace/viewer?value=实验动物三维轨迹软件操作手册.pdf";
+
+        }else  if(value=="5"){
+          //  window.location.href="http://makeshows.top/kspace/cjwt";
+
+        }
+    }
+</script>
+</html>

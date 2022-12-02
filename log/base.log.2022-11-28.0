@@ -1,0 +1,38 @@
+2022-11-28 17:49:29,675 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-MNQ005U with PID 11100 (E:\test\web\videodownload\videodownload\target\classes started by YAHD in E:\test\web\videodownload\videodownload)
+2022-11-28 17:49:29,677 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-11-28 17:49:29,678 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-11-28 17:49:30,922 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-11-28 17:49:30,923 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-11-28 17:49:30,923 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-11-28 17:49:32,169 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 2.949 seconds (JVM running for 3.904)
+2022-11-28 17:52:04,119 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-MNQ005U with PID 1428 (E:\test\web\videodownload\videodownload\target\classes started by YAHD in E:\test\web\videodownload\videodownload)
+2022-11-28 17:52:04,121 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-11-28 17:52:04,122 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-11-28 17:52:04,873 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-11-28 17:52:04,873 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-11-28 17:52:04,874 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-11-28 17:52:05,675 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.82 seconds (JVM running for 2.379)
+2022-11-28 17:52:57,795 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-MNQ005U with PID 14888 (E:\test\web\videodownload\videodownload\target\classes started by YAHD in E:\test\web\videodownload\videodownload)
+2022-11-28 17:52:57,798 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-11-28 17:52:57,798 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-11-28 17:52:58,469 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-11-28 17:52:58,470 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-11-28 17:52:58,470 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-11-28 17:52:59,231 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.708 seconds (JVM running for 2.329)
+2022-11-28 17:54:47,901 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-MNQ005U with PID 29616 (E:\test\web\videodownload\videodownload\target\classes started by YAHD in E:\test\web\videodownload\videodownload)
+2022-11-28 17:54:47,903 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-11-28 17:54:47,903 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-11-28 17:54:48,604 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-11-28 17:54:48,605 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-11-28 17:54:48,605 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-11-28 17:54:49,370 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.72 seconds (JVM running for 2.314)
+2022-11-28 17:55:17,610 INFO (StartupInfoLogger.java:55)- Starting VideodownloadApplication on DESKTOP-MNQ005U with PID 25512 (E:\test\web\videodownload\videodownload\target\classes started by YAHD in E:\test\web\videodownload\videodownload)
+2022-11-28 17:55:17,612 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2022-11-28 17:55:17,613 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2022-11-28 17:55:18,348 DEBUG (DocumentRoot.java:81)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-11-28 17:55:18,348 DEBUG (DocumentRoot.java:125)- Code archive: C:\Users\YAHD\.m2\repository\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar
+2022-11-28 17:55:18,348 DEBUG (DocumentRoot.java:149)- None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2022-11-28 17:55:19,198 INFO (StartupInfoLogger.java:61)- Started VideodownloadApplication in 1.871 seconds (JVM running for 2.467)
+2022-11-28 22:59:58,939 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into Persons(date,count,count1) values (?,?,?) 
+2022-11-28 22:59:58,959 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2022年11月28日(String), 0(Integer), 0(Integer)
+2022-11-28 22:59:59,026 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1

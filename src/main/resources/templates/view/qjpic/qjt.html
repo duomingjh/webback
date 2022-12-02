@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2022IFET云展览</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script type="text/javascript" th:src="@{/saveimg/jquery.min.js}"></script>
+    <script th:src="@{/three.js-r102/build/three.js}"></script>
+    <script th:src="@{/three.js-r102/examples/js/libs/inflate.min.js}"></script>
+    <script th:src="@{/three.js-r102/examples/js/loaders/FBXLoader.js}"></script>
+    <script th:src="@{/three.js-r102/examples/js/controls/OrbitControls.js}"></script>
+    <script th:src="@{/three.js-r102/examples/js/WebGL.js}"></script>
+    <script th:src="@{/three.js-r102/examples/js/libs/stats.min.js}"></script>
+    <script th:src="@{/three.js-r102/examples/js/loaders/GLTFLoader.js}"></script>
+    <script th:src="@{/three.js-r102/examples/js/loaders/AssimpJSONLoader.js}"></script>
+    <script th:src="@{/three.js-r102/examples/js/pmrem/PMREMGenerator.js}"></script>
+    <script th:src="@{/three.js-r102/examples/js/pmrem/PMREMCubeUVPacker.js}"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+</head>
+<style>
+
+
+</style>
+<body >
+<!--<div id="container"></div>-->
+
+<iframe id="iframe" src="https://www.720yun.com/vr/5a324uf6u1a" frameborder="no" width="100%" height="500"   ></iframe>
+<!-- Import maps polyfill -->
+<!-- Remove this when import maps will be widely supported -->
+
+</body>
+<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+<script type="importmap">
+			{
+				"imports": {
+					"three": "../build/three.module.js",
+					"three/addons/": "./jsm/"
+				}
+			}
+		</script>
+
+<script type="module">
+
+
+    //onresize属性可以用来获取或设置当前窗口的resize事件的事件处理函数
+    //onresize事件会在窗口或框架被调整大小时发生
+    window.onresize = function() {
+        changeFrameHeight();
+    }
+    var iframe = document.getElementById("iframe");
+    iframe.height = document.documentElement.clientHeight;
+
+    Document.requestFullScreen;
+
+    let camera, controls;
+    let renderer,light;
+    let scene;
+    let group;
+    let selectedObject = null;
+    var clickObjects=[];
+   // clickObjects.push(obj1);
+    const raycaster = new THREE.Raycaster();
+    const pointer = new THREE.Vector2();
+   // init();
+   // animate();
+
+    function init() {
+
+        const container = document.getElementById( 'container' );
+
+        renderer = new THREE.WebGLRenderer();
+        renderer.setPixelRatio( window.devicePixelRatio );
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        container.appendChild( renderer.domElement );
+
+        scene = new THREE.Scene();
+
+        camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 0.1, 1000 );
+        camera.position.z = 0.01;
+        camera.lookAt( scene.position );
+        camera.rotateZ(-90);
+        controls = new THREE.OrbitControls( camera,renderer.domElement);
+        controls.enableZoom = false;
+        controls.enablePan = false;
+        controls.enableDamping = true;
+        controls.rotateSpeed = - 0.1;
+
+        light = new THREE.DirectionalLight( 0xffffff );
+        light.position.set( 0, 0, 0);
+        light.castShadow = true;
+        light.shadow.camera.top = 180;
+        light.shadow.camera.bottom = - 100;
+        light.shadow.camera.left = - 120;
+        light.shadow.camera.right = 120;
+        scene.add( light );
+
+        var material = new THREE.MeshBasicMaterial();
+        var texture = new THREE.TextureLoader().load( '/qjtu/国家电网公司1.jpg' );
+        material.map = texture;
+
+        var skyBox = new THREE.Mesh(
+            new THREE.SphereBufferGeometry(100, 100, 100),
+            material
+        );
+        skyBox.geometry.scale( 1, 1, -1 );
+
+        scene.add( skyBox );
+        console.log(skyBox);
+
+        var texture = new THREE.TextureLoader().load("/kspace/下载图标.png");
+// 创建精灵材质对象SpriteMaterial
+        var spriteMaterial = new THREE.SpriteMaterial({
+
+            map: texture,//设置精灵纹理贴图
+        });
+// 创建精灵模型对象，不需要几何体geometry参数
+        var sprite1 = new THREE.Sprite(spriteMaterial);
+        scene.add(sprite1);
+      //  group.add(sprite1);
+// 控制精灵大小，比如可视化中精灵大小表征数据大小
+        sprite1.scale.set(0.1, 0.1, 0.1); //// 只需要设置x、y两个分量就可以
+        sprite1.position.set(0,1,-1);
+      //  group.add( sprite1 );
+        sprite1.name='11';
+        clickObjects.push(sprite1);
+       // initThreeClickEvent();
+        window.addEventListener( 'resize', onWindowResize );
+        document.addEventListener( 'touchstart', onPointerMove ,false);
+
+    }
+
+    function getTexturesFromAtlasFile( atlasImgUrl, tilesNum ) {
+
+        const textures = [];
+
+        for ( let i = 0; i < tilesNum; i ++ ) {
+
+            textures[ i ] = new THREE.Texture();
+
+        }
+
+        new THREE.ImageLoader()
+            .load( atlasImgUrl, ( image ) => {
+
+                let canvas, context;
+                const tileWidth = image.height;
+
+                for ( let i = 0; i < textures.length; i ++ ) {
+
+                    canvas = document.createElement( 'canvas' );
+                    context = canvas.getContext( '2d' );
+                    canvas.height = tileWidth;
+                    canvas.width = tileWidth;
+                    context.drawImage( image, tileWidth * i, 0, tileWidth, tileWidth, 0, 0, tileWidth, tileWidth );
+                    textures[ i ].image = canvas;
+                    textures[ i ].needsUpdate = true;
+
+                }
+
+            } );
+
+        return textures;
+
+    }
+
+    function onWindowResize() {
+
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize( window.innerWidth, window.innerHeight );
+
+    }
+
+    function animate() {
+
+        requestAnimationFrame( animate );
+
+        controls.update(); // required when damping is enabled
+
+        renderer.render( scene, camera );
+
+    }
+
+        function onPointerMove(event) {
+
+            console.log(camera);
+            if (event.touches.length === 1) {
+                //event.preventDefault();
+                var touch2 = event.touches[0];
+                console.log(touch2);
+                pointer.x = (touch2.pageX / window.innerWidth) * 2 - 1;
+                pointer.y = -(touch2.pageY / window.innerHeight) * 2 + 1;
+
+            }
+
+           // pointer.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+         //   pointer.x = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+            raycaster.setFromCamera(pointer, camera);
+
+            //总结一下，这里必须装网格，mesh，装入组是没有效果的
+            //所以我们将所有的盒子的网格放入对象就可以了
+            // 需要被监听的对象要存储在clickObjects中。
+            var intersects = raycaster.intersectObjects(clickObjects);
+
+             console.log(intersects)
+            if ( intersects.length > 0 ) {
+
+              //  screen.resize('width', 750);
+                // screen_full();
+                alert(intersects[0].object.name);
+            }
+
+
+    }
+    function Screen() {
+        //自动调整
+        this.resize = function (type, num) {
+            var setFontSize = function () {
+                var fontSize = 0;
+                switch (type) {
+                    case 'width': {
+                        fontSize = $(window).width() / num * 100;
+                    }
+                        break;
+                    case 'height': {
+                        fontSize = $(window).height() / num * 100
+                    }
+                }
+                $('html').css('font-size', fontSize + 'px');
+            };
+            setFontSize();
+            $(window).off('.Screen_resize')
+                .on('resize.Screen_resize', setFontSize);
+        };
+        //显示方向
+        this.orientation = function (callback) {
+            if ('orientation' in window && 'onorientationchange' in window) {
+                var getOrient = function () {
+                    if (window.orientation == 90 || window.orientation == -90) {
+                        callback(true);
+                    } else {
+                        callback(false);
+                    }
+                };
+                $(window).off('.Screen_orientation')
+                    .on('orientationchange.Screen_orientation', getOrient);
+            } else {
+                var getOrient = function () {
+                    if ($(window).width() > $(window).height()) {
+                        callback(true);
+                    } else {
+                        callback(false);
+                    }
+                }
+                $(window).off('.Screen_orientation')
+                    .on('resize.Screen_orientation', getOrient);
+            }
+            getOrient();
+        };
+        //全屏显示
+        this.full = function (callback) {
+            var element = $('body')[0];
+            if (element.requestFullscreen) {
+                element.requestFullscreen();
+            } else if (element.mozRequestFullScreen) {
+                element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullscreen) {
+                element.webkitRequestFullscreen();
+            } else if (element.msRequestFullscreen) {
+                element.msRequestFullscreen();
+            }
+            setTimeout(callback, 300);
+        };
+        //退出全屏
+        this.unFull = function () {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            }
+        };
+        //旋转屏幕
+        this.rotate = function (angle, status) {
+            var setAngle = function () {
+                if (status) {
+                    var width = $(window).width();
+                    var height = $(window).height();
+                    var center = width / 2;
+                } else {
+                    var height = $(window).width();
+                    var width = $(window).height();
+                    var center = height / 2;
+                }
+                $('body').css({
+                    width: width + 'px',
+                    height: height + 'px',
+                    transform: 'rotate(' + angle + 'deg)',
+                    transformOrigin: center + 'px ' + center + 'px'
+                });
+            }
+            setAngle();
+            $(window).off('.Screen_rotate')
+                .on('resize.Screen_rotate', setAngle);
+        };
+    }
+
+    var screen = new Screen();
+    var  screen_full=function () {
+        screen.full(function () {
+            screen.orientation(function (status) {
+                console.log(screen.orientation);
+                if (status) {
+                    screen.rotate(0, true);
+                    screen.resize('height', 750);
+                } else {
+                    screen.resize('width', 750);
+                    screen.rotate(90);
+                }
+            });
+        });
+    }
+    //screen.resize('width', 750);
+   // screen_full();
+
+    export default {
+        screen_full:screen_full
+    }
+
+</script>
+
+</html>
